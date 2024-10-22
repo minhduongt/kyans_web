@@ -4,22 +4,26 @@ import SectionOne from '@/sections/section_1';
 import SectionTwo from '@/sections/section_2';
 import SectionThree from '@/sections/section_3';
 import SectionFour from '@/sections/section_4';
+import CarouselSection from './sections/carousel_section';
+import ProductSection from './sections/product_section';
 import '@/styles/App.scss';
 
 function App() {
   return (
-    <main>
+    <main className="bg-[url('/assets/images/landing_background.jpg')] bg-contain bg-repeat-y">
       <Header />
-      <section id="#sectionOne">
+      <CarouselSection />
+      <section id="sectionOne">
         <SectionOne />
       </section>
-      <section id="#sectionTwo">
+      <section id="sectionTwo">
         <SectionTwo />
       </section>
-      <section id="#sectionThree">
+      <section id="sectionThree">
         <SectionThree />
       </section>
-      <section id="#sectionFour">
+      <ProductSection />
+      <section id="sectionFour">
         <SectionFour />
       </section>
       <Footer />

@@ -1,5 +1,5 @@
 function SectionTwo() {
-  return <div>Section 2</div>;
+  return <div className="h-[1800px]">Tổng quan chiến dịch</div>;
 }
 
 export default SectionTwo;

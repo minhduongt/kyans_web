@@ -1,7 +1,9 @@
 function Logo() {
   return (
-    <div>
-      <img src="/assets/images/logo.png" />
+    <div className="h-[70px] w-[90px]">
+      <a href="#">
+        <img src="/assets/images/logo.png" />
+      </a>
     </div>
   );
 }
