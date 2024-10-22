@@ -10,16 +10,16 @@ function App() {
   return (
     <main>
       <Header />
-      <section>
+      <section id="#sectionOne">
         <SectionOne />
       </section>
-      <section>
+      <section id="#sectionTwo">
         <SectionTwo />
       </section>
-      <section>
+      <section id="#sectionThree">
         <SectionThree />
       </section>
-      <section>
+      <section id="#sectionFour">
         <SectionFour />
       </section>
       <Footer />

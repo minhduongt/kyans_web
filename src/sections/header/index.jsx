@@ -1,5 +1,11 @@
+import NavigationBar from './NavigationBar';
+
 function Header() {
-  return <header>Header</header>;
+  return (
+    <header>
+      <NavigationBar />
+    </header>
+  );
 }
 
 export default Header;
