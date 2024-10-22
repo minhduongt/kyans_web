@@ -1,5 +1,5 @@
 function SectionThree() {
-  return <div>Section 3</div>;
+  return <div>Hoạt động chi tiết</div>;
 }
 
 export default SectionThree;

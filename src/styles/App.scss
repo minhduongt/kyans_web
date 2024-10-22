@@ -1,3 +1,10 @@
-h1 {
-  color: red;
+* {
+  transition:
+    background 0.3s ease,
+    opacity 0.3s ease;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
