@@ -1,13 +1,14 @@
 {
-    "compilerOptions": {
-      "baseUrl": ".",
-      "paths": {
-        "~/*": ["src/*"],
-        "~styles/*": ["src/styles/*"],
-        "~components/*": ["src/components/*"],
-        "~constants/*": ["src/constants/*"],
-        "~sections/*": ["src/sections/*"],
-      }
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@styles/*": ["src/styles/*"],
+      "@components/*": ["src/components/*"],
+      "@constants/*": ["src/constants/*"],
+      "@sections/*": ["src/sections/*"],
     }
+  },
+  "include": ["src"]   
 }
   

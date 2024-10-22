@@ -4,6 +4,7 @@ import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
+import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 
 export default [
   { ignores: ['dist'] },
@@ -22,17 +23,17 @@ export default [
       react: { version: 'detect' },
       'import/resolver': {
         node: {
-          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          extensions: ['.js', '.jsx'],
           moduleDirectory: ['node_modules', 'src/'],
         },
         alias: {
           extensions: ['.js', '.jsx'],
           map: [
-            ['~', './src'],
-            ['~components', './src/components'],
-            ['~styles', './src/styles'],
-            ['~constants', './src/constants'],
-            ['~sections', './src/sections'],
+            ['@', './src'],
+            ['@components', './src/components'],
+            ['@styles', './src/styles'],
+            ['@constants', './src/constants'],
+            ['@sections', './src/sections'],
           ],
         },
       },
@@ -49,6 +50,7 @@ export default [
       ...react.configs['jsx-runtime'].rules,
       ...reactHooks.configs.recommended.rules,
       ...eslintPluginPrettier.configs.recommended.rules,
+      ...eslintPluginReactHooks.configs.recommended.rules,
       'react/jsx-no-target-blank': 'off',
       'react-refresh/only-export-components': [
         'warn',
