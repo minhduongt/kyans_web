@@ -7,6 +7,8 @@ import SectionFour from '@/sections/section_4';
 import CarouselSection from './sections/carousel_section';
 import ProductSection from './sections/product_section';
 import '@/styles/App.scss';
+import CarouselSection from './sections/carousel_section';
+import ProductSection from './sections/product_section';
 
 function App() {
   return (
