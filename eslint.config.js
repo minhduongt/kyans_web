@@ -18,7 +18,25 @@ export default [
         sourceType: 'module',
       },
     },
-    settings: { react: { version: 'detect' } },
+    settings: {
+      react: { version: 'detect' },
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          moduleDirectory: ['node_modules', 'src/'],
+        },
+        alias: {
+          extensions: ['.js', '.jsx'],
+          map: [
+            ['~', './src'],
+            ['~components', './src/components'],
+            ['~styles', './src/styles'],
+            ['~constants', './src/constants'],
+            ['~sections', './src/sections'],
+          ],
+        },
+      },
+    },
     plugins: {
       react,
       'react-hooks': reactHooks,
