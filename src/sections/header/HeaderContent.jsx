@@ -5,9 +5,9 @@ function HeaderContent() {
   return (
     <div className="relative">
       <div className="mx-auto my-0 flex w-[560px] flex-col items-center gap-5">
-        <img src="/assets/images/section_1_logo.png" />
+        <img alt="section banner" src="/assets/images/section_1_logo.png" />
         <div className="border-t-[1px] border-black pt-2">
-          <p className="text-medium text-center">
+          <p className="text-center text-medium">
             Chiến dịch truyền thông nằm nâng cao nhận thức của người trẻ về bệnh
             cột sống.
           </p>
