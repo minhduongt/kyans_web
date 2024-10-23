@@ -5,6 +5,27 @@ import 'swiper/css';
 import '@/styles/sections/Carousel.scss';
 
 function CarouselSection() {
+  const swiperOptions = {
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 300,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 300,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 300,
+      },
+      1920: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+    },
+  };
+
   return (
     <div
       id="carouselSection"
@@ -13,11 +34,12 @@ function CarouselSection() {
       <Swiper
         modules={[FreeMode, Autoplay]}
         spaceBetween={300}
-        slidesPerView={3}
+        slidesPerView={2}
         loop
         speed={2000}
         freeMode={true}
         autoplay={{ delay: 0, disableOnInteraction: false }}
+        {...swiperOptions}
       >
         {CAROUSEL_SLIDES.map((slide) => (
           <SwiperSlide key={slide.id}>

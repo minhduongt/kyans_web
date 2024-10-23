@@ -8,7 +8,7 @@ function Header() {
       <img
         alt="notebook"
         src="/assets/images/header_notebook.webp"
-        className="absolute min-w-[1440px]"
+        className="absolute h-full min-w-[1440px]"
       />
       <div className="absolute top-[12%] w-[300px]">
         <img alt="pencil" src="/assets/images/header_pen.webp" />
