@@ -1,9 +1,12 @@
-import { scrollToSectionById } from '@/utils';
+import { cn, scrollToSectionById } from '@/utils';
 
-function LinkText({ label, id }) {
+function LinkText({ label, id, className }) {
   return (
     <div
-      className="hover:bg-blue-primary cursor-pointer rounded-[30px] p-4 hover:text-white"
+      className={cn(
+        'hover:bg-blue-primary cursor-pointer rounded-[30px] p-4 hover:text-white',
+        className,
+      )}
       onClick={() => scrollToSectionById(id)}
     >
       <p className="font-gilroy text-small">{label}</p>
