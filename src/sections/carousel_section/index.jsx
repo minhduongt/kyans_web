@@ -6,6 +6,12 @@ import '@/styles/sections/Carousel.scss';
 
 function CarouselSection() {
   const swiperOptions = {
+    loop: true,
+    autoplay: { delay: 0, disableOnInteraction: false },
+    freeMode: true,
+    spaceBetween: 300,
+    slidesPerView: 2,
+    speed: 2000,
     breakpoints: {
       480: {
         slidesPerView: 1,
@@ -31,16 +37,7 @@ function CarouselSection() {
       id="carouselSection"
       className="flex h-[700px] items-center bg-yellow-light"
     >
-      <Swiper
-        modules={[FreeMode, Autoplay]}
-        spaceBetween={300}
-        slidesPerView={2}
-        loop
-        speed={2000}
-        freeMode={true}
-        autoplay={{ delay: 0, disableOnInteraction: false }}
-        {...swiperOptions}
-      >
+      <Swiper modules={[FreeMode, Autoplay]} {...swiperOptions}>
         {CAROUSEL_SLIDES.map((slide) => (
           <SwiperSlide key={slide.id}>
             <img
