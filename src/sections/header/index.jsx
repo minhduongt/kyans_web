@@ -1,6 +1,6 @@
 import HeaderContent from './HeaderContent';
 import NavigationBar from './NavigationBar';
-import '@/styles/Header.scss';
+import '@/styles/sections/Header.scss';
 
 function Header() {
   return (
