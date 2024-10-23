@@ -4,7 +4,7 @@ function PrimaryButton({ label, className, ...props }) {
   return (
     <button
       className={cn(
-        'bg-red-primary max-w-[240px] rounded-2xl px-[35px] py-[20px] text-white hover:opacity-80',
+        'max-w-[240px] rounded-2xl bg-red-primary px-[35px] py-[20px] text-white hover:opacity-80',
         className,
       )}
       {...props}
