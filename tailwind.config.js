@@ -7,6 +7,7 @@ export default {
         'blue-primary': '#0e72d0',
         'red-primary': '#AD1C1C',
         'red-secondary': '#D81F26',
+        'orange-primary': '#D58700',
         'yellow-light': '#F7EFE1',
       },
       screens: {
@@ -17,11 +18,13 @@ export default {
       },
       fontFamily: {
         gilroy: ['SVN-Gilroy', 'Inter'],
+        spaceGrotesk: ['Space Grotesk', 'Inter'],
       },
       fontSize: {
         h1: '70px',
         h2: '48px',
         h3: '40px',
+        extraSmall: '18px',
         small: '20px',
         medium: '24px',
         large: '48px',
