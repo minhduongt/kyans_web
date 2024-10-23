@@ -10,7 +10,7 @@ import '@/styles/App.scss';
 
 function App() {
   return (
-    <main className="bg-[url('/assets/images/landing_background.jpg')] bg-contain bg-repeat-y">
+    <main className="bg-[url('/assets/images/landing_background.webp')] bg-contain bg-repeat-y">
       <Header />
       <CarouselSection />
       <section id="sectionOne">
