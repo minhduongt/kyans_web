@@ -5,11 +5,13 @@ import '@/styles/sections/Header.scss';
 function Header() {
   return (
     <header id="header" className="relative h-[1300px]">
-      <img
-        alt="notebook"
-        src="/assets/images/header_notebook.webp"
-        className="absolute h-full min-w-[1440px]"
-      />
+      <div className="absolute h-full w-full">
+        <img
+          alt="notebook"
+          src="/assets/images/header_notebook.webp"
+          className="h-full"
+        />
+      </div>
       <div className="absolute top-[12%] w-[300px]">
         <img alt="pencil" src="/assets/images/header_pen.webp" />
       </div>

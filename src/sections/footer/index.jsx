@@ -9,7 +9,7 @@ function Footer() {
           <img alt="footer pencil" src="/assets/images/footer_pen.webp" />
         </div>
         <div id="footer_content_section" className="w-full self-end px-[75px]">
-          <div className="to-orange-primary relative flex h-[530px] w-full rounded-t-[112px] bg-gradient-to-b from-red-primary">
+          <div className="relative flex h-[530px] w-full rounded-t-[112px] bg-gradient-to-b from-red-primary to-orange-primary">
             <div className="absolute top-[-10%] w-[170px]">
               <img
                 alt="footer mascot"
