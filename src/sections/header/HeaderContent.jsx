@@ -7,10 +7,10 @@ function HeaderContent() {
       <div className="mx-auto my-0 flex w-[560px] flex-col items-center gap-5">
         <img alt="section banner" src="/assets/images/header_logo.webp" />
         <div className="border-t-[1px] border-black pt-2">
-          <p className="text-center text-medium">
+          <h1 className="text-center text-medium">
             Chiến dịch truyền thông nằm nâng cao nhận thức của người trẻ về bệnh
             cột sống.
-          </p>
+          </h1>
         </div>
         <PrimaryButton
           className="mt-2"
