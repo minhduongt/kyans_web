@@ -18,7 +18,7 @@ function Header() {
           },
         }}
         viewport={{ once: true }}
-        className="absolute h-full w-full"
+        className="absolute h-full max-h-[1000px] w-full"
       >
         <img
           alt="notebook"
