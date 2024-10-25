@@ -31,7 +31,7 @@ function Header() {
           left: '-20%',
           top: '15%',
         }}
-        whileInView={{
+        animate={{
           left: 0,
           top: '12%',
           transition: {
@@ -50,7 +50,7 @@ function Header() {
           right: '-25%',
           top: '15%',
         }}
-        whileInView={{
+        animate={{
           right: 0,
           top: '10%',
           transition: {
@@ -72,7 +72,7 @@ function Header() {
           left: '-25%',
           top: '60%',
         }}
-        whileInView={{
+        animate={{
           left: 0,
           top: '45%',
           transition: {
