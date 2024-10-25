@@ -8,7 +8,7 @@ import { cn } from '@/utils';
 function CarouselSection() {
   const swiperOptions = {
     loop: true,
-    // autoplay: { delay: 0, disableOnInteraction: false },
+    autoplay: { delay: 0, disableOnInteraction: false },
     freeMode: true,
     spaceBetween: 300,
     slidesPerView: 2,
