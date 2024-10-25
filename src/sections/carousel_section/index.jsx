@@ -3,15 +3,16 @@ import { FreeMode, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '@/styles/sections/Carousel.scss';
+import { cn } from '@/utils';
 
 function CarouselSection() {
   const swiperOptions = {
     loop: true,
-    autoplay: { delay: 0, disableOnInteraction: false },
+    // autoplay: { delay: 0, disableOnInteraction: false },
     freeMode: true,
     spaceBetween: 300,
     slidesPerView: 2,
-    speed: 2000,
+    speed: 5000,
     breakpoints: {
       480: {
         slidesPerView: 1,
@@ -39,11 +40,14 @@ function CarouselSection() {
     >
       <Swiper modules={[FreeMode, Autoplay]} {...swiperOptions}>
         {CAROUSEL_SLIDES.map((slide) => (
-          <SwiperSlide key={slide.id}>
+          <SwiperSlide
+            key={slide.id}
+            className={slide.isWider && '!mr-[550px]'}
+          >
             <img
               alt={slide.label}
               src={slide.imageUrl}
-              className="h-[500px] w-fit min-w-[500px] max-w-max"
+              className={cn('h-[500px] w-fit min-w-[500px] max-w-max')}
             />
           </SwiperSlide>
         ))}
