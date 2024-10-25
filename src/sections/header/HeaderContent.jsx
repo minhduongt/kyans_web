@@ -1,9 +1,24 @@
+import { motion } from 'framer-motion';
 import PrimaryButton from '@/components/element/PrimaryButton';
 import { scrollToSectionById } from '@/utils';
 
 function HeaderContent() {
   return (
-    <div className="relative">
+    <motion.div
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          duration: 1,
+          delay: 1,
+          ease: 'easeInOut',
+        },
+      }}
+      viewport={{ once: true }}
+      className="relative"
+    >
       <div className="mx-auto my-0 flex w-[560px] flex-col items-center gap-5">
         <img alt="section banner" src="/assets/images/header_logo.webp" />
         <div className="border-t-[1px] border-black pt-2">
@@ -18,7 +33,7 @@ function HeaderContent() {
           onClick={() => scrollToSectionById('carouselSection')}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
