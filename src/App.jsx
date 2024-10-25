@@ -6,11 +6,13 @@ import SectionThree from '@/sections/section_3';
 import SectionFour from '@/sections/section_4';
 import CarouselSection from './sections/carousel_section';
 import ProductSection from './sections/product_section';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 import '@/styles/App.scss';
 
 function App() {
   return (
     <main className="bg-[url('/assets/images/landing_background.webp')] bg-contain bg-repeat-y">
+      <ScrollToTopButton />
       <Header />
       <CarouselSection />
       <section id="sectionOne">

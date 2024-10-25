@@ -5,10 +5,10 @@ function Footer() {
   return (
     <footer id="footer">
       <div className="relative flex h-[780px] w-full">
-        <div className="absolute right-0 top-[7%] z-[1] w-[600px]">
-          <img alt="footer pencil" src="/assets/images/footer_pen.webp" />
-        </div>
         <div id="footer_content_section" className="w-full self-end px-[75px]">
+          <div className="absolute right-0 top-[7%] z-[1] w-[600px]">
+            <img alt="footer pencil" src="/assets/images/footer_pen.webp" />
+          </div>
           <div className="relative flex h-[530px] w-full rounded-t-[112px] bg-gradient-to-b from-red-primary to-orange-primary">
             <div className="absolute top-[-10%] w-[170px]">
               <img
@@ -16,7 +16,7 @@ function Footer() {
                 src="/assets/images/footer_mascot.webp"
               />
             </div>
-            <div className="w-full self-end px-[100px]">
+            <div className="relative z-[2] w-full self-end px-[100px]">
               <Contact />
               <CopyrightInfo />
             </div>
