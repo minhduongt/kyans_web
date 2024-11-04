@@ -8,23 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install dependencies
         run: yarn install
-        
+
       - name: Lint code
         run: yarn lint
-        
+
       - name: Build
         run: yarn build
 
   cd:
-    needs: ci                   # Only deploy if CI passes
-    if: github.ref == 'refs/heads/main'  # Only deploy on main
+    needs: ci # Only deploy if CI passes
+    if: github.ref == 'refs/heads/main' # Only deploy on main
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: yarn && yarn build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
