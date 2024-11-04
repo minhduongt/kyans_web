@@ -8,7 +8,7 @@ function HeaderContent() {
       initial={{
         opacity: 0,
       }}
-      whileInView={{
+      animate={{
         opacity: 1,
         transition: {
           duration: 1,
@@ -16,7 +16,6 @@ function HeaderContent() {
           ease: 'easeInOut',
         },
       }}
-      viewport={{ once: true }}
       className="relative"
     >
       <div className="mx-auto my-0 flex w-[560px] flex-col items-center gap-5">

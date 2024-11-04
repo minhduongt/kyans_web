@@ -15,14 +15,15 @@ function Contact() {
             Email:kyansunitour@gmail.com
           </p>
         </a>
-        <a href="tel:5555678901">
+        <a href="tel:0819541013">
           <p className="font-spaceGrotesk text-extraSmall text-white">
-            Phone: 555-567-8901
+            Phone: 0819-541-013
           </p>
         </a>
-        <a href="https://maps.google.com/?q=1234+Main+St,+Moonstone+City,+Stardust+12345">
+        <a href="https://maps.app.goo.gl/3S14UB3hdy3UEzT79">
           <p className="font-spaceGrotesk text-extraSmall text-white">
-            Address: 1234 Main St Moonstone City, Stardust State 12345
+            Address: Lô E2a-7, Đường D1, Đ. D1, Long Thạnh Mỹ, Thành Phố Thủ
+            Đức, Hồ Chí Minh
           </p>
         </a>
       </div>

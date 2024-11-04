@@ -17,7 +17,6 @@ function Header() {
             ease: 'easeInOut',
           },
         }}
-        viewport={{ once: true }}
         className="absolute h-full max-h-[1000px] w-full"
       >
         <img
@@ -40,7 +39,6 @@ function Header() {
             ease: 'easeInOut',
           },
         }}
-        viewport={{ once: true }}
         className="absolute top-[12%] w-[300px]"
       >
         <img alt="pencil" src="/assets/images/header_pen.webp" />
@@ -59,7 +57,6 @@ function Header() {
             ease: 'easeInOut',
           },
         }}
-        viewport={{ once: true }}
         className="absolute right-0 top-[10%] w-[850px]"
       >
         <img
@@ -81,7 +78,6 @@ function Header() {
             ease: 'easeInOut',
           },
         }}
-        viewport={{ once: true }}
         className="absolute top-[45%] w-[450px]"
       >
         <img alt="notebook 2" src="/assets/images/header_notebook2.webp" />
