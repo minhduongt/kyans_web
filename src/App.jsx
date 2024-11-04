@@ -8,6 +8,7 @@ import CarouselSection from './sections/carousel_section';
 import ProductSection from './sections/product_section';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import '@/styles/App.scss';
+import '@/styles/fonts.scss';
 
 function App() {
   return (

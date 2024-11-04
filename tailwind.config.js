@@ -19,11 +19,13 @@ export default {
       fontFamily: {
         gilroy: ['SVN-Gilroy', 'Inter'],
         spaceGrotesk: ['Space Grotesk', 'Inter'],
+        orenji: ['DFVN Orenji', 'Inter'],
       },
       fontSize: {
         h1: '70px',
         h2: '48px',
         h3: '40px',
+        title: '30px',
         extraSmall: '18px',
         small: '20px',
         medium: '24px',

@@ -1,6 +1,6 @@
 import { cn } from '@/utils';
 
-function PrimaryButton({ label, className, ...props }) {
+function PrimaryButton({ label, className, textClassName, ...props }) {
   return (
     <button
       className={cn(
@@ -9,7 +9,9 @@ function PrimaryButton({ label, className, ...props }) {
       )}
       {...props}
     >
-      <p className="text-medium font-semibold">{label || 'Button'}</p>
+      <p className={cn('text-medium font-semibold', textClassName)}>
+        {label || 'Button'}
+      </p>
     </button>
   );
 }
