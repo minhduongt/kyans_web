@@ -10,25 +10,21 @@ function CarouselSection() {
     loop: true,
     autoplay: { delay: 0, disableOnInteraction: false },
     freeMode: true,
-    spaceBetween: 300,
-    slidesPerView: 2,
+    spaceBetween: 50,
+    slidesPerView: 3,
     speed: 5000,
     breakpoints: {
       480: {
         slidesPerView: 1,
-        spaceBetween: 300,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 300,
       },
       1440: {
         slidesPerView: 3,
-        spaceBetween: 300,
       },
       1920: {
         slidesPerView: 4,
-        spaceBetween: 0,
       },
     },
   };
@@ -42,12 +38,14 @@ function CarouselSection() {
         {CAROUSEL_SLIDES.map((slide) => (
           <SwiperSlide
             key={slide.id}
-            className={slide.isWider && '!mr-[550px]'}
+            className={cn('min-w-fit', slide.isSmaller && '!-ml-[50px] !mr-0')}
           >
             <img
               alt={slide.label}
               src={slide.imageUrl}
-              className={cn('h-[500px] w-fit min-w-[500px] max-w-max')}
+              className={cn(
+                'h-[500px] w-fit min-w-[500px] max-w-max object-contain',
+              )}
             />
           </SwiperSlide>
         ))}
