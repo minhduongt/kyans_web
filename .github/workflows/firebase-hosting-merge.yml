@@ -14,16 +14,22 @@ jobs:
 
       - name: Lint code
         run: yarn lint
-
-      - name: Build
-        run: yarn build
-
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
   cd:
     needs: ci # Only deploy if CI passes
     if: github.ref == 'refs/heads/main' # Only deploy on main
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Download build artifacts
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist/
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
