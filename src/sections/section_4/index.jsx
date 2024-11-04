@@ -1,4 +1,4 @@
-import PartnerWithPreview from '@/components/section/section_4/partnerWithPreview';
+import PartnerWithPreview from '@/components/section/section_4/PartnerWithPreview';
 import PartnerTitle from '@/components/section/section_4/title';
 
 function SectionFour() {
