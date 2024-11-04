@@ -23,6 +23,7 @@ jobs:
     if: github.ref == 'refs/heads/main' # Only deploy on main
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
