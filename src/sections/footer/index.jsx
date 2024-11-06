@@ -11,10 +11,7 @@ function Footer() {
           </div>
           <div className="relative flex h-[530px] w-full rounded-t-[112px] bg-gradient-to-b from-red-primary to-orange-primary">
             <div className="absolute top-[-10%] w-[170px]">
-              <img
-                alt="footer mascot"
-                src="/assets/images/footer_mascot.webp"
-              />
+              <img alt="footer mascot" src="/assets/images/side_mascot.webp" />
             </div>
             <div className="relative z-[2] w-full self-end px-[100px]">
               <Contact />

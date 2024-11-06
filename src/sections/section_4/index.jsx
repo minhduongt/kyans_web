@@ -3,7 +3,7 @@ import PartnerTitle from '@/components/section/section_4/title';
 
 function SectionFour() {
   return (
-    <div className="relative h-[2720px] bg-[#F7EFE1]">
+    <div className="relative h-[2720px] bg-yellow-light">
       <h1 className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-[45px] bg-red-primary px-[60px] py-[20px] font-orenji text-h1 text-white">
         Đối tác dự án
       </h1>
