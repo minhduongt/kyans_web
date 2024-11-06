@@ -17,6 +17,7 @@ export default {
         xl: '1440px',
       },
       fontFamily: {
+        inter: ['Inter'],
         gilroy: ['SVN-Gilroy', 'Inter'],
         spaceGrotesk: ['Space Grotesk', 'Inter'],
         orenji: ['DFVN Orenji', 'Inter'],

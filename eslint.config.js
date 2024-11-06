@@ -34,6 +34,7 @@ export default [
             ['@styles', './src/styles'],
             ['@constants', './src/constants'],
             ['@sections', './src/sections'],
+            ['@icons', './src/icons'],
           ],
         },
       },
