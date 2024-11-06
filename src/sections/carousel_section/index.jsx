@@ -26,6 +26,9 @@ function CarouselSection() {
       1920: {
         slidesPerView: 4,
       },
+      2560: {
+        slidesPerView: 5,
+      },
     },
   };
 
