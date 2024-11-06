@@ -11,7 +11,7 @@ function SectionFour() {
         id="partners"
         className="flex h-full flex-col items-center justify-center gap-10"
       >
-        <div id="partner_group_1" className="flex flex-col items-center gap-10">
+        <div id="partner_group_1" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'BAN TỔ CHỨC'} />
           <div className="flex items-center gap-10">
             <div className="max-h-[125px] max-w-[325px]">
@@ -25,7 +25,7 @@ function SectionFour() {
             </div>
           </div>
         </div>
-        <div id="partner_group_2" className="flex flex-col items-center gap-10">
+        <div id="partner_group_2" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'ĐƠN VỊ ĐỒNG HÀNH'} />
           <div className="flex items-center gap-10">
             <div className="max-h-[100px] max-w-[200px]">
@@ -42,13 +42,13 @@ function SectionFour() {
             </div>
           </div>
         </div>
-        <div id="partner_group_3" className="flex flex-col items-center gap-10">
+        <div id="partner_group_3" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'ĐỐI TÁC ÂM NHẠC'} />
           <div className="max-h-[145px] max-w-[115px]">
             <img alt="partner_suzu" src="/assets/images/partner_suzu.webp" />
           </div>
         </div>
-        <div id="partner_group_4" className="flex flex-col items-center gap-10">
+        <div id="partner_group_4" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'ĐỐI TÁC SẢN XUẤT'} />
           <div className="flex items-center gap-10">
             <div className="max-h-[85px] max-w-[220px]">
@@ -65,7 +65,7 @@ function SectionFour() {
             </div>
           </div>
         </div>
-        <div id="partner_group_5" className="flex flex-col items-center gap-10">
+        <div id="partner_group_5" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'NHÀ TÀI TRỢ KIM CƯƠNG'} />
           <PartnerWithPreview>
             <div className="max-h-[66px] max-w-[360px]">
@@ -76,7 +76,7 @@ function SectionFour() {
             </div>
           </PartnerWithPreview>
         </div>
-        <div id="partner_group_6" className="flex flex-col items-center gap-10">
+        <div id="partner_group_6" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'NHÀ TÀI TRỢ VÀNG'} />
           <div className="flex items-center gap-10">
             <PartnerWithPreview>
@@ -105,7 +105,7 @@ function SectionFour() {
             </PartnerWithPreview>
           </div>
         </div>
-        <div id="partner_group_7" className="flex flex-col items-center gap-10">
+        <div id="partner_group_7" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'NHÀ TÀI TRỢ BẠC'} />
           <div className="flex items-center gap-10">
             <div className="max-h-[135px] max-w-[120px]">
@@ -122,7 +122,7 @@ function SectionFour() {
             </div>
           </div>
         </div>
-        <div id="partner_group_8" className="flex flex-col items-center gap-10">
+        <div id="partner_group_8" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'NHÀ TÀI TRỢ ĐỒNG HÀNH'} />
           <div className="flex items-center gap-10">
             <div className="max-h-[90px] max-w-[100px]">
@@ -139,7 +139,7 @@ function SectionFour() {
             </div>
           </div>
         </div>
-        <div id="partner_group_9" className="flex flex-col items-center gap-10">
+        <div id="partner_group_9" className="flex flex-col items-center gap-9">
           <PartnerTitle label={'BẢO TRỢ TRUYỀN THÔNG'} />
           <div className="max-h-[235px] max-w-[780px]">
             <img
