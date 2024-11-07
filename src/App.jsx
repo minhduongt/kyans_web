@@ -16,17 +16,17 @@ function App() {
       <ScrollToTopButton />
       <Header />
       <CarouselSection />
-      <section id="sectionOne">
+      <section id="thuc-trang-cot-song">
         <SectionOne />
       </section>
-      <section id="sectionTwo">
+      <section id="tong-quan-chien-dich">
         <SectionTwo />
       </section>
-      <section id="sectionThree">
+      <section id="hoat-dong-chi-tiet">
         <SectionThree />
       </section>
       <ProductSection />
-      <section id="sectionFour">
+      <section id="doi-tac">
         <SectionFour />
       </section>
       <Footer />

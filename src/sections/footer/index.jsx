@@ -3,7 +3,7 @@ import CopyrightInfo from '@/components/section/footer/CopyrightInfo';
 
 function Footer() {
   return (
-    <footer id="footer">
+    <footer id="lien-he">
       <div className="relative flex h-[1080px] w-full">
         <div id="footer_content_section" className="w-full self-end px-[75px]">
           <div className="absolute bottom-[19%] right-0 z-[1] w-[600px]">

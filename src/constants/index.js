@@ -1,10 +1,10 @@
 export const NAVIGATION_ITEMS = [
-  { id: 'sectionOne', label: 'Thực trạng cột sống' },
-  { id: 'sectionTwo', label: 'Tổng quan chiến dich' },
-  { id: 'sectionThree', label: 'Hoạt động chi tiết' },
-  { id: 'sectionFour', label: 'Đối tác' },
+  { id: 'thuc-trang-cot-song', label: 'Thực trạng cột sống' },
+  { id: 'tong-quan-chien-dich', label: 'Tổng quan chiến dich' },
+  { id: 'hoat-dong-chi-tiet', label: 'Hoạt động chi tiết' },
+  { id: 'doi-tac', label: 'Đối tác' },
   {
-    id: 'footer',
+    id: 'lien-he',
     label: 'Liên hệ',
   },
 ];
