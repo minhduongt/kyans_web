@@ -13,7 +13,10 @@
     "preview": "vite preview"
   },
   "reactSnap": {
-    "source": "dist"
+    "source": "dist",
+    "exclude": [
+      "iframe"
+    ]
   },
   "dependencies": {
     "classnames": "^2.5.1",
