@@ -29,7 +29,7 @@ const ScrollToTopButton = ({ top = 20, smooth = true, ...props }) => {
       onClick={() => scrollToTop(smooth)}
       aria-label="Lên đầu trang"
       className={cn(
-        'fixed bottom-6 right-6 z-10 h-fit w-fit rounded-md border-[1px] border-solid border-red-primary bg-orange-primary p-2 transition-all duration-300 hover:bottom-7 hover:opacity-90',
+        'fixed bottom-6 right-6 z-50 h-fit w-fit rounded-md border-[1px] border-solid border-red-primary bg-orange-primary p-2 transition-all duration-300 hover:bottom-7 hover:opacity-90',
         visible ? 'visible opacity-100' : 'invisible opacity-0',
       )}
       {...props}

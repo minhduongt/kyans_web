@@ -54,14 +54,14 @@ function ProductSection() {
           <img alt="product mascot" src="/assets/images/product_mascot.webp" />
         </motion.div>
         <div className="flex max-w-[910px] flex-col items-end gap-10 pr-[130px] text-medium">
-          <p className="font-inter mt-10 text-justify leading-8">
+          <p className="mt-10 text-justify font-inter leading-8">
             {`Cô Sô - một thám tử thuộc tổ chức THIO`}
             <i>(Hiệp hội Điều tra Sức Khoẻ Xuyên thời gian)</i>
             {` đến từ tương lai để điều tra các nguyên do dẫn đến
             thực trạng nhiều người trẻ Việt Nam đang mắc các bệnh liên quan đến
             cột sống.`}
           </p>
-          <p className="font-inter text-justify leading-8">
+          <p className="text-justify font-inter leading-8">
             {`Nghe phong thanh đồn đoán, “Cô Sô tới nơi - Hung thủ tới
             số". Liệu vị “trùm cuối" này sẽ đối phó với kẻ chủ mưu và giải cứu
             những nạn nhân mắc bệnh cột sống như thế nào? Mời mọi người cùng theo
@@ -95,7 +95,7 @@ function ProductSection() {
                 allowFullScreen
               />
             </div>
-            <h1 className="font-inter pt-[3%] text-center text-medium font-bold">
+            <h1 className="pt-[3%] text-center font-inter text-medium font-bold">
               Official Animated Short Film
             </h1>
           </motion.div>

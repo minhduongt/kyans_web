@@ -6,6 +6,8 @@ export function cn(...classes) {
 }
 
 export function scrollToSectionById(id) {
-  const targetElement = document.querySelector(`#${id}`);
+  const idHash = `#${id}`;
+  const targetElement = document.querySelector(idHash);
   targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  window.history.replaceState({}, '', window.location.origin + idHash);
 }
