@@ -51,7 +51,7 @@ function SectionThree() {
                 }
               />
               <Section3Card
-                titleClassName={'!text-[18px]'}
+                titleClassName={'!text-extraSmall'}
                 title={'Chủ động Chăm sóc Sức khỏe'}
                 label={
                   'Khuyến khích thói quen sinh hoạt lành mạnh và các biện pháp phòng ngừa chủ động.'
