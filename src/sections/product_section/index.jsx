@@ -86,7 +86,6 @@ function ProductSection() {
           >
             <div className="relative h-full w-full overflow-hidden rounded-[45px] border-[1px] border-black">
               <iframe
-                loading="lazy"
                 className="absolute left-0 top-0 z-10 h-full w-full"
                 src="https://www.youtube.com/embed/nmSO__aYEQA?si=27d0mszMB4AKm4y-"
                 title="Animated Short Film"
