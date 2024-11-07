@@ -1,6 +1,7 @@
-import React from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
+import { StrictMode } from 'react';
 import App from './App';
+import '@/index.css';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -8,14 +9,14 @@ const root = createRoot(rootElement);
 if (rootElement?.hasChildNodes()) {
   hydrateRoot(
     rootElement,
-    <React.StrictMode>
+    <StrictMode>
       <App />
-    </React.StrictMode>,
+    </StrictMode>,
   );
 } else {
   root.render(
-    <React.StrictMode>
+    <StrictMode>
       <App />
-    </React.StrictMode>,
+    </StrictMode>,
   );
 }

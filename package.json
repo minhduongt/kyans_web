@@ -13,9 +13,6 @@
     "preview": "vite preview"
   },
   "reactSnap": {
-    "inlineCss": true,
-    "puppeteerArgs": ["--no-sandbox"],
-    "fixWebpackChunksIssue": false,
     "source": "dist"
   },
   "dependencies": {
