@@ -12,7 +12,7 @@ function Contact() {
         </p>
         <a href="mailto:kyansunitour@gmail.com">
           <p className="font-spaceGrotesk text-extraSmall text-white">
-            Email:kyansunitour@gmail.com
+            Email: kyansunitour@gmail.com
           </p>
         </a>
         <a href="tel:0819541013">

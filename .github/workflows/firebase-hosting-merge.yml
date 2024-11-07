@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: dist
+          path: build
   cd:
     needs: ci # Only deploy if CI passes
     if: github.ref == 'refs/heads/main' # Only deploy on main
@@ -33,7 +33,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: build
-          path: dist
+          path: build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
