@@ -24,7 +24,7 @@ function SectionThree() {
         <div className="max-h-[650px] max-w-[650px]">
           <img alt="section3 logo" src="/assets/images/section3_logo.webp" />
         </div>
-        <div className="relative bottom-8 max-h-[375px] max-w-[850px] scale-[1.1]">
+        <div className="relative bottom-8 max-h-[375px] w-full max-w-[850px] scale-[1.1]">
           <img alt="steps" src="/assets/images/section3_steps.webp" />
         </div>
       </div>
@@ -43,7 +43,7 @@ function SectionThree() {
         <div className="pt-[10%]">
           <Section3Title label={'Giá trị cốt lõi'} className={'mb-8 ml-10'} />
           <div className="flex flex-col gap-3">
-            <div className="flex w-full gap-3">
+            <div className="flex w-full justify-evenly gap-3">
               <Section3Card
                 title={'Nhận Thức & Giáo Dục'}
                 label={
@@ -58,7 +58,7 @@ function SectionThree() {
                 }
               />
             </div>
-            <div className="flex w-full gap-3">
+            <div className="flex w-full justify-evenly gap-3">
               <Section3Card
                 title={'Đổi mới & Sáng tạo'}
                 label={

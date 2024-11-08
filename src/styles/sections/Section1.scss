@@ -1,0 +1,9 @@
+.statistic_paragraph {
+	&:not(:last-child) {
+		border-right: 1px solid #ff9900;
+	}
+
+	&:last-child {
+		padding-right: 0;
+	}
+}
