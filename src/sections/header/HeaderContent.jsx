@@ -18,10 +18,11 @@ function HeaderContent() {
       }}
       className="relative"
     >
-      <div className="mx-auto my-0 flex w-[560px] flex-col items-center gap-5">
+      <div className="mx-auto my-0 flex w-full max-w-[357px] flex-col items-center gap-5 md:max-w-[560px]">
         <img alt="section banner" src="/assets/images/header_logo.webp" />
+
         <div className="border-t-[1px] border-black pt-2">
-          <h1 className="text-center text-medium">
+          <h1 className="text-center text-base md:text-medium">
             Chiến dịch truyền thông nằm nâng cao nhận thức của người trẻ về bệnh
             cột sống.
           </h1>

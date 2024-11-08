@@ -4,7 +4,7 @@ function Section3Card({ label, title, className, titleClassName }) {
   return (
     <div
       className={cn(
-        'mt-2 flex h-[285px] w-1/2 max-w-[330px] flex-col justify-evenly rounded-[45px] border-[1px] border-red-primary px-8 shadow-[0_5px_0_0] shadow-red-primary',
+        'mt-2 flex h-[285px] w-1/2 max-w-[330px] flex-col justify-evenly rounded-[45px] border-[1px] border-red-primary bg-[#FFFFFF5C] px-8 shadow-[0_5px_0_0] shadow-red-primary',
         className,
       )}
     >

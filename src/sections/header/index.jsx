@@ -32,14 +32,14 @@ function Header() {
         }}
         animate={{
           left: 0,
-          top: '12%',
+          top: 'initial',
           transition: {
             duration: 1,
             delay: 0.3,
             ease: 'easeInOut',
           },
         }}
-        className="absolute top-[12%] w-[300px]"
+        className="absolute top-0 z-[2] max-w-[195px] md:top-[12%] md:max-w-[300px]"
       >
         <img alt="pencil" src="/assets/images/header_pen.webp" />
       </motion.div>

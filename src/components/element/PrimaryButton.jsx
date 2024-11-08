@@ -9,7 +9,9 @@ function PrimaryButton({ label, className, textClassName, ...props }) {
       )}
       {...props}
     >
-      <p className={cn('text-medium font-semibold', textClassName)}>
+      <p
+        className={cn('text-base font-semibold md:text-medium', textClassName)}
+      >
         {label || 'Button'}
       </p>
     </button>
