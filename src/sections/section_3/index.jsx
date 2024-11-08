@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function SectionThree() {
   return (
-    <div className="relative flex h-[1800px]">
+    <div className="relative mt-[300px] flex h-[1800px]">
       <motion.div
         initial={{
           height: 0,

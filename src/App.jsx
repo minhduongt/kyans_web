@@ -29,14 +29,15 @@ function App() {
       <CarouselSection />
       <section id="thuc-trang-cot-song">
         <SectionOne />
-      </section>
-      <section id="tong-quan-chien-dich">
         <SectionTwo />
       </section>
-      <section id="hoat-dong-chi-tiet">
+      <section id="tong-quan-chien-dich">
         <SectionThree />
       </section>
-      <ProductSection />
+
+      <section id="hoat-dong-chi-tiet">
+        <ProductSection />
+      </section>
       <section id="doi-tac">
         <SectionFour />
       </section>

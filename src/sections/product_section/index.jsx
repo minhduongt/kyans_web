@@ -12,7 +12,7 @@ function Product1() {
     <>
       <motion.div
         initial={{
-          bottom: -50,
+          bottom: -25,
           opacity: 0,
         }}
         whileInView={{
@@ -93,7 +93,7 @@ function Product2() {
     <>
       <motion.div
         initial={{
-          bottom: -50,
+          bottom: -25,
           opacity: 0,
         }}
         whileInView={{
