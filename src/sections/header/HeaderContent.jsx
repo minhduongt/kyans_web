@@ -29,7 +29,7 @@ function HeaderContent() {
         <PrimaryButton
           className="mt-2"
           label="Khai phá Kỳ án"
-          onClick={() => scrollToSectionById('carouselSection')}
+          onClick={() => scrollToSectionById('su-kien')}
         />
       </div>
     </motion.div>

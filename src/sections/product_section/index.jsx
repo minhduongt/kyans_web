@@ -3,9 +3,10 @@ import ArrowIcon from '../../icons/arrow.svg';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Loading from '@/components/Loading';
+import { cn } from '@/utils';
 
 function Product1() {
-  const [videoLoading, setVideoLoading] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(true);
 
   return (
     <>
@@ -86,7 +87,7 @@ function Product1() {
 }
 
 function Product2() {
-  const [videoLoading, setVideoLoading] = useState(false);
+  const [videoLoading, setVideoLoading] = useState(true);
 
   return (
     <>
@@ -162,27 +163,12 @@ function Product3() {
       <p className="whitespace-nowrap text-justify font-orenji text-h1 text-red-primary">
         Bạn hãy quay lại sau nhé!
       </p>
-      <motion.div
-        initial={{
-          bottom: -50,
-          opacity: 0,
-        }}
-        whileInView={{
-          bottom: 0,
-          opacity: 1,
-          transition: {
-            duration: 1,
-            ease: 'easeInOut',
-          },
-        }}
-        viewport={{ once: true }}
-        className="max-w-[668px]"
-      >
+      <div className="relative max-w-[668px]">
         <img
           alt="confused_mascot"
           src={'/assets/images/confused_mascot.webp'}
         />
-      </motion.div>
+      </div>
     </div>
   );
 }
@@ -220,7 +206,7 @@ function ProductSection() {
       setTimeout(() => {
         setCurrentProduct((prev) => prev + num);
         setLoading(false);
-      }, 500);
+      }, 750);
     }
   };
 
@@ -253,13 +239,21 @@ function ProductSection() {
         <div className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-between px-4">
           <button
             onClick={() => handleChangeProduct(-1)}
-            className="flex h-16 w-16 items-center justify-center rounded-full bg-red-primary"
+            className={cn(
+              'flex h-16 w-16 items-center justify-center rounded-full bg-red-primary',
+              currentProduct === 0 &&
+                'cursor-default bg-gray-500 hover:opacity-100',
+            )}
           >
             <img className="h-6 w-6 rotate-180" src={ArrowIcon} />
           </button>
           <button
             onClick={() => handleChangeProduct(1)}
-            className="flex h-16 w-16 items-center justify-center rounded-full bg-red-primary"
+            className={cn(
+              'flex h-16 w-16 items-center justify-center rounded-full bg-red-primary',
+              currentProduct === PRODUCTS.length - 1 &&
+                'cursor-default bg-gray-500 hover:opacity-100',
+            )}
           >
             <img className="h-6 w-6" src={ArrowIcon} />
           </button>

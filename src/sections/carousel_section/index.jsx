@@ -33,10 +33,7 @@ function CarouselSection() {
   };
 
   return (
-    <div
-      id="carouselSection"
-      className="flex h-[700px] items-center bg-yellow-light"
-    >
+    <div id="su-kien" className="flex h-[700px] items-center bg-yellow-light">
       <Swiper modules={[FreeMode, Autoplay]} {...swiperOptions}>
         {CAROUSEL_SLIDES.map((slide) => (
           <SwiperSlide

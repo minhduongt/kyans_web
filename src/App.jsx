@@ -9,8 +9,19 @@ import ProductSection from './sections/product_section';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import '@/styles/App.scss';
 import '@/styles/fonts.scss';
+import { useEffect } from 'react';
 
 function App() {
+  const hash = window.location.hash;
+  useEffect(() => {
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [hash]);
+
   return (
     <main className="bg-[url('/assets/images/landing_background.webp')] bg-contain bg-repeat-y">
       <ScrollToTopButton />
