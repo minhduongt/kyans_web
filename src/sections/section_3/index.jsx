@@ -38,7 +38,7 @@ function SectionThree() {
           },
         }}
         viewport={{ once: true }}
-        className="m-4 flex pt-[80px]"
+        className="m-4 flex pt-[4%]"
       >
         <div className="relative z-10 flex w-[52%] flex-col items-center">
           <div className="max-h-[650px] max-w-[650px]">
@@ -61,10 +61,10 @@ function SectionThree() {
               đồng.
             </p>
           </div>
-          <div className="pt-[10%]">
+          <div className="pt-[56px]">
             <Section3Title label={'Giá trị cốt lõi'} className={'mb-6 ml-10'} />
             <div className="flex flex-col gap-3">
-              <div className="flex w-full justify-evenly gap-3">
+              <div className="flex w-full justify-evenly gap-[2%]">
                 <Section3Card
                   title={'Nhận Thức & Giáo Dục'}
                   label={
@@ -79,7 +79,7 @@ function SectionThree() {
                   }
                 />
               </div>
-              <div className="flex w-full justify-evenly gap-3">
+              <div className="flex w-full justify-evenly gap-[2%]">
                 <Section3Card
                   title={'Đổi mới & Sáng tạo'}
                   label={
