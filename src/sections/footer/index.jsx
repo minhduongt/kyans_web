@@ -22,6 +22,7 @@ function Footer() {
                 ease: 'easeInOut',
               },
             }}
+            viewport={{ once: true }}
             className="absolute bottom-[19%] right-0 z-[1] w-[600px]"
           >
             <img alt="footer pencil" src="/assets/images/footer_pen.webp" />
@@ -38,6 +39,7 @@ function Footer() {
                   ease: 'easeInOut',
                 },
               }}
+              viewport={{ once: true }}
               className="absolute top-[-10%] w-[170px]"
             >
               <img alt="footer mascot" src="/assets/images/side_mascot.webp" />
@@ -63,6 +65,7 @@ function Footer() {
               ease: 'easeInOut',
             },
           }}
+          viewport={{ once: true }}
           className="absolute bottom-0 z-[1] w-[450px]"
         >
           <img
