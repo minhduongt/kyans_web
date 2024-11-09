@@ -1,6 +1,6 @@
 export const NAVIGATION_ITEMS = [
   { id: 'thuc-trang-cot-song', label: 'Thực trạng cột sống' },
-  { id: 'tong-quan-chien-dich', label: 'Tổng quan chiến dich' },
+  { id: 'tong-quan-chien-dich', label: 'Tổng quan chiến dịch' },
   { id: 'hoat-dong-chi-tiet', label: 'Hoạt động chi tiết' },
   { id: 'doi-tac', label: 'Đối tác' },
   {

@@ -17,9 +17,13 @@ function SectionThree() {
           },
         }}
         viewport={{ once: true }}
-        className="absolute -mt-[2%] w-full"
+        className="absolute -mt-[2%] h-full w-full"
       >
-        <img alt="notebook full" src="/assets/images/section3_bg.webp" />
+        <img
+          alt="notebook full"
+          src="/assets/images/section3_bg.webp"
+          className="h-full"
+        />
       </motion.div>
       <motion.div
         initial={{
@@ -34,23 +38,23 @@ function SectionThree() {
           },
         }}
         viewport={{ once: true }}
-        className="m-4 flex"
+        className="m-4 flex pt-[80px]"
       >
-        <div className="relative z-10 w-[52%]">
+        <div className="relative z-10 flex w-[52%] flex-col items-center">
           <div className="max-h-[650px] max-w-[650px]">
             <img alt="section3 logo" src="/assets/images/section3_logo.webp" />
           </div>
           <div className="relative bottom-8 left-[5%] max-h-[375px] w-full max-w-[850px] scale-[1.1]">
-            <img alt="steps" src="/assets/images/section3_steps.webp" />
+            <img alt="steps" src="/assets/images/section3_steps.png" />
           </div>
         </div>
-        <div className="relative z-10 w-[48%] pt-4">
+        <div className="relative z-10 w-[48%]">
           <div className="relative mt-[10%] rounded-bl-[85px] rounded-tr-[85px] border-[1px] border-solid border-red-primary bg-[#FFFFFF5C] p-10">
             <Section3Title
               label={'Sứ mệnh'}
               className="absolute left-10 top-0 -translate-y-1/2"
             />
-            <p className="] mt-4 max-w-[543px] text-justify font-inter text-[22px] leading-[26.5px]">
+            <p className="] mx-auto mt-4 max-w-[543px] text-justify font-inter text-[22px] leading-[26.5px]">
               Chiến dịch nhằm nâng cao nhận thức cho nhóm tuổi 18-24 về tầm quan
               trọng của việc phòng ngừa bệnh cột sống, từ đó giảm lo lắng và
               thúc đẩy chăm sóc sức khỏe cột sống một cách chủ động trong cộng
@@ -58,7 +62,7 @@ function SectionThree() {
             </p>
           </div>
           <div className="pt-[10%]">
-            <Section3Title label={'Giá trị cốt lõi'} className={'mb-8 ml-10'} />
+            <Section3Title label={'Giá trị cốt lõi'} className={'mb-6 ml-10'} />
             <div className="flex flex-col gap-3">
               <div className="flex w-full justify-evenly gap-3">
                 <Section3Card
@@ -108,7 +112,7 @@ function SectionThree() {
           },
         }}
         viewport={{ once: true }}
-        className="absolute -left-[20%] bottom-[8%] m-10 max-h-[782px] max-w-[861px]"
+        className="absolute -left-[20%] bottom-0 m-10 max-h-[782px] max-w-[861px]"
       >
         <img alt="section3 logo" src="/assets/images/section3_doc.webp" />
       </motion.div>

@@ -38,7 +38,7 @@ function SectionTwo() {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0 ml-[55px] flex h-full max-h-[345px] w-full max-w-[1049px] flex-col items-center justify-center rounded-[45px] bg-yellow-light">
+      <div className="absolute bottom-0 ml-[55px] flex h-full max-h-[345px] w-full max-w-[1049px] flex-col items-center justify-center rounded-t-[45px] bg-yellow-light">
         <div className="max-w-[650px]">
           <h1 className="font-orenji text-[50px] text-red-primary">
             Có thể là...
