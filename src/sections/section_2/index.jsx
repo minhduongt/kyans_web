@@ -1,10 +1,10 @@
 function SectionTwo() {
   return (
-    <div className="relative h-[1125px] bg-[rgba(255,255,255,0.45)]">
+    <div className="relative flex h-[1125px] flex-col bg-[rgba(255,255,255,0.45)]">
       <h1 className="absolute top-0 ml-[2%] h-fit w-fit -translate-y-1/2 rounded-[45px] bg-red-primary px-8 py-4 font-orenji text-h2 text-white">
         Thực trạng truyền thông
       </h1>
-      <div className="flex h-full max-h-fit w-full items-center justify-center gap-6 pt-[80px]">
+      <div className="flex h-full w-full items-center justify-center gap-6 pt-[80px]">
         <div className="relative flex h-full max-h-[540px] w-full max-w-[430px] items-center justify-center bg-[url('/assets/images/section2_pin.webp')]">
           <p className="p-9 text-justify font-inter text-[27px] leading-[32px]">
             Trong
@@ -38,7 +38,7 @@ function SectionTwo() {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-0 ml-[55px] flex h-full max-h-[345px] w-full max-w-[1049px] flex-col items-center justify-center rounded-t-[45px] bg-yellow-light">
+      <div className="relative right-[5%] mx-auto mt-[200px] flex h-full max-h-[345px] w-fit flex-col items-center justify-center rounded-t-[45px] bg-yellow-light pl-[12%] pr-[15%]">
         <div className="max-w-[650px]">
           <h1 className="font-orenji text-[50px] text-red-primary">
             Có thể là...
@@ -52,9 +52,12 @@ function SectionTwo() {
             </span>
           </p>
         </div>
-      </div>
-      <div className="absolute bottom-0 right-0 max-h-[550px] max-w-[550px]">
-        <img alt="partner_hoabien" src="/assets/images/section2_mascot.webp" />
+        <div className="absolute -right-[22%] bottom-0 max-w-[550px]">
+          <img
+            alt="section2_mascot"
+            src="/assets/images/section2_mascot.webp"
+          />
+        </div>
       </div>
     </div>
   );

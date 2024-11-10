@@ -13,8 +13,8 @@ export default {
       screens: {
         sm: '480px',
         md: '768px',
-        lg: '976px',
-        xl: '1440px',
+        lg: '1440px',
+        xl: '1920px',
       },
       fontFamily: {
         inter: ['Inter'],
