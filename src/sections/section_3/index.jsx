@@ -73,7 +73,7 @@ function SectionThree() {
               label={'Sứ mệnh'}
               className="absolute left-10 top-0 -translate-y-1/2"
             />
-            <p className="text-smallMobile mx-auto mt-4 max-w-[543px] text-justify font-inter leading-[26.5px] md:text-[22px]">
+            <p className="mx-auto mt-4 max-w-[543px] text-justify font-inter text-smallMobile leading-[26.5px] md:text-[22px]">
               Chiến dịch nhằm nâng cao nhận thức cho nhóm tuổi 18-24 về tầm quan
               trọng của việc phòng ngừa bệnh cột sống, từ đó giảm lo lắng và
               thúc đẩy chăm sóc sức khỏe cột sống một cách chủ động trong cộng

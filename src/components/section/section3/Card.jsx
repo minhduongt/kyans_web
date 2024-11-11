@@ -16,7 +16,7 @@ function Section3Card({ label, title, className, titleClassName }) {
       >
         {title}
       </p>
-      <p className="text-smallMobile mx-auto max-w-[255px] text-justify font-inter leading-6 md:text-small">
+      <p className="mx-auto max-w-[255px] text-justify font-inter text-smallMobile leading-6 md:text-small">
         {label}
       </p>
     </div>

@@ -6,7 +6,7 @@ function SectionTwo() {
       </h1>
       <div className="flex h-full w-full items-center justify-center gap-6 pt-[80px]">
         <div className="relative flex h-full max-h-[540px] w-full max-w-[430px] items-center justify-center bg-[url('/assets/images/section2_pin.webp')]">
-          <p className="text-mobile p-9 text-justify font-inter leading-[32px] md:text-[27px]">
+          <p className="p-9 text-justify font-inter text-mobile leading-[32px] md:text-[27px]">
             Trong
             <span className="font-bold text-red-primary">
               {' 330.000 cuộc thảo luận '}
@@ -19,7 +19,7 @@ function SectionTwo() {
           </p>
         </div>
         <div className="relative top-[80px] flex h-full max-h-[540px] w-full max-w-[430px] items-center justify-center bg-[url('/assets/images/section2_pin.webp')]">
-          <p className="text-mobile p-6 text-justify font-inter leading-[32px] md:text-[27px]">
+          <p className="p-6 text-justify font-inter text-mobile leading-[32px] md:text-[27px]">
             Trong hơn 4.000 cuộc thảo luận, nhóm Gen Z thường sử dụng
             <span className="font-bold text-red-primary">
               {` thuật ngữ
@@ -29,7 +29,7 @@ function SectionTwo() {
           </p>
         </div>
         <div className="relative flex h-full max-h-[540px] w-full max-w-[430px] items-center justify-center bg-[url('/assets/images/section2_pin.webp')]">
-          <p className="text-mobile p-9 text-justify font-inter leading-[32px] md:text-[27px]">
+          <p className="p-9 text-justify font-inter text-mobile leading-[32px] md:text-[27px]">
             {`Áp lực từ tiền bạc, tình yêu và công việc là những chủ đề chiếm 73%
             nội dung về cảm giác căng thẳng và "quá tải" của Gen Z.`}
             <span className="font-bold text-red-primary">

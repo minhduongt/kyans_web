@@ -29,7 +29,7 @@ function SectionOne() {
             <div className="flex h-[750px] flex-col gap-14 rounded-b-[45px] rounded-tr-[45px] bg-yellow-light pt-10 md:h-[600px] md:justify-center md:gap-[15%] md:pt-0">
               <div className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0">
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
                     Mỗi năm, Việt Nam có khoảng
                     <span className="font-bold text-red-secondary">
                       {' 31.000 bệnh nhân '}
@@ -38,7 +38,7 @@ function SectionOne() {
                   </p>
                 </div>
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
                     Vẹo cột sống vô căn ở tuổi vị thành niên thường bắt đầu từ
                     <span className="font-bold text-red-secondary">
                       {' độ tuổi 10-18, chiếm 85% '}
@@ -47,7 +47,7 @@ function SectionOne() {
                   </p>
                 </div>
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
                     Khoảng
                     <span className="font-bold text-red-secondary">
                       {' 35% người dân Việt Nam (hơn 34 triệu dân) '}
@@ -61,7 +61,7 @@ function SectionOne() {
               </div>
               <div className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0">
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
                     Theo Cục Y tế Dự phòng từ Bộ Y tế, ít nhất
                     <span className="font-bold text-red-secondary">
                       {' 30% người trưởng thành '}
@@ -70,7 +70,7 @@ function SectionOne() {
                   </p>
                 </div>
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:p-2 md:text-medium md:leading-[29px]">
                     Hầu hết giới trẻ hiện nay ngồi sử dụng điện thoại hoặc máy
                     tính trong
                     <span className="font-bold text-red-secondary">
@@ -79,7 +79,7 @@ function SectionOne() {
                   </p>
                 </div>
                 <div className="statistic_paragraph">
-                  <p className="text-mobile h-fit w-fit max-w-[310px] text-justify font-inter leading-[17px] md:max-w-[320px] md:p-1 md:text-medium md:leading-[29px]">
+                  <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:p-1 md:text-medium md:leading-[29px]">
                     Họ
                     <span className="font-bold text-red-secondary">
                       {' ngần ngại thay đổi thói quen không lành mạnh '}
@@ -108,7 +108,7 @@ function SectionOne() {
               <h1 className="relative font-orenji text-[18px] text-red-primary md:right-[110px] md:text-[50px]">
                 Đặc biệt hơn...
               </h1>
-              <p className="text-mobile max-w-[240px] text-justify leading-[17px] md:max-w-[750px] md:text-[32px] md:leading-[38px]">
+              <p className="max-w-[240px] text-justify text-mobile leading-[17px] md:max-w-[750px] md:text-[32px] md:leading-[38px]">
                 Nhiều người từ chối phẫu thuật chủ yếu vì
                 <span className="font-bold text-red-primary">
                   {' lo ngại biến chứng '}
