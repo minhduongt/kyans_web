@@ -1,21 +1,32 @@
 import Section3Card from '@/components/section/section3/Card';
 import Section3Title from '@/components/section/section3/Section3Title';
+import { useMediaQuery } from '@uidotdev/usehooks';
 import { motion } from 'framer-motion';
 
 function SectionThree() {
+  const isMobile = useMediaQuery('only screen and (max-width : 768px)');
+
   return (
-    <div className="relative mt-[300px] h-[1800px]">
+    <div className="relative mt-[100px] h-[1800px] md:mt-[300px]">
       <motion.div
-        initial={{
-          transform: 'rotateY(90deg)',
-        }}
-        whileInView={{
-          transform: 'none',
-          transition: {
-            duration: 1,
-            ease: 'easeInOut',
-          },
-        }}
+        initial={
+          isMobile
+            ? {}
+            : {
+                transform: 'rotateY(90deg)',
+              }
+        }
+        whileInView={
+          isMobile
+            ? {}
+            : {
+                transform: 'none',
+                transition: {
+                  duration: 1,
+                  ease: 'easeInOut',
+                },
+              }
+        }
         viewport={{ once: true }}
         className="absolute -mt-[2%] h-full w-full"
       >
@@ -26,21 +37,29 @@ function SectionThree() {
         />
       </motion.div>
       <motion.div
-        initial={{
-          opacity: 0,
-        }}
-        whileInView={{
-          opacity: 1,
-          transition: {
-            duration: 1,
-            delay: 1,
-            ease: 'easeInOut',
-          },
-        }}
+        initial={
+          isMobile
+            ? {}
+            : {
+                opacity: 0,
+              }
+        }
+        whileInView={
+          isMobile
+            ? {}
+            : {
+                opacity: 1,
+                transition: {
+                  duration: 1,
+                  delay: 1,
+                  ease: 'easeInOut',
+                },
+              }
+        }
         viewport={{ once: true }}
-        className="m-4 flex pt-[4%]"
+        className="m-4 flex flex-col pt-[4%] md:flex-row"
       >
-        <div className="relative z-10 flex w-[52%] flex-col items-center">
+        <div className="relative z-10 flex w-full flex-col items-center md:w-[52%]">
           <div className="max-h-[650px] max-w-[650px]">
             <img alt="section3 logo" src="/assets/images/section3_logo.webp" />
           </div>
@@ -48,13 +67,13 @@ function SectionThree() {
             <img alt="steps" src="/assets/images/section3_steps.png" />
           </div>
         </div>
-        <div className="relative z-10 w-[48%]">
+        <div className="relative z-10 w-full md:w-[48%]">
           <div className="relative mt-[10%] rounded-bl-[85px] rounded-tr-[85px] border-[1px] border-solid border-red-primary bg-[#FFFFFF5C] p-10">
             <Section3Title
               label={'Sứ mệnh'}
               className="absolute left-10 top-0 -translate-y-1/2"
             />
-            <p className="] mx-auto mt-4 max-w-[543px] text-justify font-inter text-[22px] leading-[26.5px]">
+            <p className="text-smallMobile mx-auto mt-4 max-w-[543px] text-justify font-inter leading-[26.5px] md:text-[22px]">
               Chiến dịch nhằm nâng cao nhận thức cho nhóm tuổi 18-24 về tầm quan
               trọng của việc phòng ngừa bệnh cột sống, từ đó giảm lo lắng và
               thúc đẩy chăm sóc sức khỏe cột sống một cách chủ động trong cộng
@@ -98,19 +117,27 @@ function SectionThree() {
         </div>
       </motion.div>
       <motion.div
-        initial={{
-          opacity: 0,
-          left: '-30%',
-        }}
-        whileInView={{
-          opacity: 1,
-          left: '-20%',
-          transition: {
-            duration: 1,
-            delay: 0.5,
-            ease: 'easeInOut',
-          },
-        }}
+        initial={
+          isMobile
+            ? {}
+            : {
+                opacity: 0,
+                left: '-30%',
+              }
+        }
+        whileInView={
+          isMobile
+            ? {}
+            : {
+                opacity: 1,
+                left: '-20%',
+                transition: {
+                  duration: 1,
+                  delay: 0.5,
+                  ease: 'easeInOut',
+                },
+              }
+        }
         viewport={{ once: true }}
         className="absolute -left-[20%] bottom-0 m-10 max-h-[782px] max-w-[861px]"
       >

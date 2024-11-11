@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Loading from '@/components/Loading';
 import { cn } from '@/utils';
+import { useMediaQuery } from '@uidotdev/usehooks';
 
 function Product1() {
   const [videoLoading, setVideoLoading] = useState(true);
@@ -28,22 +29,22 @@ function Product1() {
       >
         <img alt="product_mascot" src={'/assets/images/product_mascot.webp'} />
       </motion.div>
-      <div className="flex h-full max-w-[910px] flex-col items-end gap-10 pr-[130px] text-medium">
-        <p className="mt-10 text-justify font-inter leading-8">
+      <div className="flex h-full max-w-[910px] flex-col items-center gap-10 pr-0 text-medium md:items-end md:pr-[130px]">
+        <p className="text-mobile mt-10 text-justify font-inter leading-8 md:text-[25px]">
           {`Cô Sô - một thám tử thuộc tổ chức THIO`}
           <i>(Hiệp hội Điều tra Sức Khoẻ Xuyên thời gian)</i>
           {` đến từ tương lai để điều tra các nguyên do dẫn đến
             thực trạng nhiều người trẻ Việt Nam đang mắc các bệnh liên quan đến
           cột sống.`}
         </p>
-        <p className="text-justify font-inter leading-8">
+        <p className="text-mobile text-justify font-inter leading-8 md:text-[25px]">
           {`Nghe phong thanh đồn đoán, “Cô Sô tới nơi - Hung thủ tới
           số". Liệu vị “trùm cuối" này sẽ đối phó với kẻ chủ mưu và giải cứu
           những nạn nhân mắc bệnh cột sống như thế nào? Mời mọi người cùng theo
           chân Cô Sô trong nhiệm vụ đầu tiên!`}
         </p>
         <motion.div
-          className="relative mt-8 h-full max-h-[355px] w-full max-w-[620px]"
+          className="relative mt-8 h-full max-h-[180px] w-full max-w-[310px] md:max-h-[355px] md:max-w-[620px]"
           initial={{
             opacity: 0,
             scale: 0.5,
@@ -77,7 +78,7 @@ function Product1() {
               <Loading />
             </div>
           )}
-          <h1 className="pt-[3%] text-center font-inter text-medium font-bold">
+          <h1 className="text-mobile pt-[3%] text-center font-inter font-bold md:text-medium">
             {'Official Animated Short Film'}
           </h1>
         </motion.div>
@@ -109,12 +110,12 @@ function Product2() {
       >
         <img alt="choco_singer" src={'/assets/images/choco_singer.webp'} />
       </motion.div>
-      <div className="flex h-full max-w-[910px] flex-col items-end gap-10 pr-[130px] text-medium">
-        <p className="mt-10 text-justify font-inter leading-8">
+      <div className="flex h-full max-w-[910px] flex-col items-end gap-10 pr-0 text-medium md:pr-[130px]">
+        <p className="text-mobile mt-10 text-justify font-inter leading-8 md:text-[25px]">
           {`Đối mặt với tình trạng “cột sống bất ổn” đang tấn công, bộ đôi Cô Sô và THIO quyết định biến những “tiếng kêu cứu” của cột sống thành lời ca nhắn nhủ đậm chất GenZ. Với giai điệu hài hước của bài hát gốc “Chưa Có Wow,” Bài Ca Cột Sống được Ca sĩ Choco Trúc Phương góp giọng sẽ không chỉ mang đến cảm giác gần gũi qua giai điệu, mà còn chạm đến những insight cột sống ”éc ô éc” của người trẻ ngày nay!`}
         </p>
         <motion.div
-          className="relative mt-8 h-full max-h-[355px] w-full max-w-[620px]"
+          className="relative mt-8 h-full max-h-[180px] w-full max-w-[310px] md:max-h-[355px] md:max-w-[620px]"
           initial={{
             opacity: 0,
             scale: 0.5,
@@ -148,7 +149,7 @@ function Product2() {
               <Loading />
             </div>
           )}
-          <h1 className="pt-[3%] text-center font-inter text-medium font-bold">
+          <h1 className="text-mobile pt-[3%] text-center font-inter font-bold md:text-medium">
             {'Official Motion Music Video'}
           </h1>
         </motion.div>
@@ -160,7 +161,7 @@ function Product2() {
 function Product3() {
   return (
     <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 flex-col items-center gap-10">
-      <p className="whitespace-nowrap text-justify font-orenji text-h1 text-red-primary">
+      <p className="whitespace-nowrap text-justify font-orenji text-medium text-red-primary md:text-h1">
         Bạn hãy quay lại sau nhé!
       </p>
       <div className="relative max-w-[668px]">
@@ -194,6 +195,7 @@ const PRODUCTS = [
 ];
 
 function ProductSection() {
+  const isMobile = useMediaQuery('only screen and (max-width : 768px)');
   const [loading, setLoading] = useState(false);
   const [currentProduct, setCurrentProduct] = useState(0);
 
@@ -212,10 +214,10 @@ function ProductSection() {
 
   return (
     <div className="mb-[400px]">
-      <div className="flex items-center bg-red-primary">
+      <div className="flex w-full flex-col items-center bg-red-primary md:flex-row">
         <motion.div
           className="relative max-w-[235px]"
-          variants={LEFT_ENTER}
+          variants={isMobile ? {} : LEFT_ENTER}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
@@ -223,14 +225,16 @@ function ProductSection() {
           <img alt="mascot" src="/assets/images/side_mascot.webp" />
         </motion.div>
         <motion.div
-          variants={LEFT_ENTER}
+          variants={isMobile ? {} : LEFT_ENTER}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
           className="relative text-white"
         >
-          <p className="text-title">{PRODUCTS[currentProduct].label}</p>
-          <h1 className="font-orenji text-h1">
+          <p className="text-mobile md:text-title">
+            {PRODUCTS[currentProduct].label}
+          </p>
+          <h1 className="font-orenji text-medium md:text-h1">
             {PRODUCTS[currentProduct].name}
           </h1>
         </motion.div>
@@ -260,7 +264,7 @@ function ProductSection() {
         </div>
 
         <motion.div
-          variants={FADE_TRANSITION}
+          variants={isMobile ? {} : FADE_TRANSITION}
           animate={loading ? 'initial' : 'loading'}
         >
           {PRODUCTS[currentProduct].content}

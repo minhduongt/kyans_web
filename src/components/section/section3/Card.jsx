@@ -10,13 +10,13 @@ function Section3Card({ label, title, className, titleClassName }) {
     >
       <p
         className={cn(
-          'border-b-[1px] border-black text-center font-inter !text-medium font-bold text-red-primary',
+          'border-b-[1px] border-black text-center font-inter !text-[13px] font-bold text-red-primary md:!text-medium',
           titleClassName,
         )}
       >
         {title}
       </p>
-      <p className="mx-auto max-w-[255px] text-justify font-inter text-small leading-6">
+      <p className="text-smallMobile mx-auto max-w-[255px] text-justify font-inter leading-6 md:text-small">
         {label}
       </p>
     </div>

@@ -1,12 +1,7 @@
 .statistic_paragraph {
-	display: flex;
-	align-items: center;
+	@apply flex relative w-full md:items-center md:justify-center min-h-0 justify-center md:min-h-[186px];
 
 	&:not(:last-child) {
-		border-right: 1px solid #ff9900;
-	}
-
-	&:last-child {
-		padding-right: 0;
+		@apply md:border-r-[1px] border-[#ff9900] md:after:hidden after:border-[#ff9900] z-50 after:content-[''] after:-bottom-[30px] after:h-[10px] after:absolute after:w-[185px] after:border-b-[1px];
 	}
 }

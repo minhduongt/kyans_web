@@ -14,8 +14,10 @@ function CarouselSection() {
     slidesPerView: 3,
     speed: 5000,
     breakpoints: {
-      480: {
+      0: {
         slidesPerView: 1,
+        spaceBetween: 100,
+        speed: 2000,
       },
       768: {
         slidesPerView: 2,
@@ -33,12 +35,18 @@ function CarouselSection() {
   };
 
   return (
-    <div id="su-kien" className="flex h-[700px] items-center bg-yellow-light">
+    <div
+      id="su-kien"
+      className="flex h-[600px] items-center bg-yellow-light md:h-[700px]"
+    >
       <Swiper modules={[FreeMode, Autoplay]} {...swiperOptions}>
         {CAROUSEL_SLIDES.map((slide) => (
           <SwiperSlide
             key={slide.id}
-            className={cn('min-w-fit', slide.isSmaller && '!-ml-[50px] !mr-0')}
+            className={cn(
+              'min-w-fit',
+              slide.isSmaller && '!-ml-[100px] !mr-0 md:!-ml-[50px]',
+            )}
           >
             <img
               alt={slide.label}

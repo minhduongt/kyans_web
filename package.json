@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@uidotdev/usehooks": "^2.4.1",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
     "framer-motion": "^11.11.9",
