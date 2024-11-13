@@ -4,11 +4,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import '@/styles/sections/Carousel.scss';
 import { cn } from '@/utils';
+import { useMediaQuery } from '@uidotdev/usehooks';
 
 function CarouselSection() {
+  const isMobile = useMediaQuery('only screen and (max-width : 768px)');
+
   const swiperOptions = {
     loop: true,
-    autoplay: { delay: 0, disableOnInteraction: false },
+    autoplay: { delay: 0, disableOnInteraction: isMobile ? true : false },
     freeMode: true,
     spaceBetween: 50,
     slidesPerView: 3,
