@@ -159,7 +159,7 @@ function SectionThree() {
       <motion.div
         initial={
           isMobile
-            ? {}
+            ? { opacity: 0, left: '-45%' }
             : {
                 opacity: 0,
                 left: '-30%',
@@ -167,7 +167,15 @@ function SectionThree() {
         }
         whileInView={
           isMobile
-            ? {}
+            ? {
+                opacity: 1,
+                left: '-30%',
+                transition: {
+                  duration: 1,
+                  delay: 0.5,
+                  ease: 'easeInOut',
+                },
+              }
             : {
                 opacity: 1,
                 left: '-18%',

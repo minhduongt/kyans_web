@@ -25,26 +25,26 @@ function Product1() {
           },
         }}
         viewport={{ once: true }}
-        className="absolute bottom-0 left-0 max-w-[668px]"
+        className="absolute bottom-0 left-0 max-w-[233px] md:max-w-[668px]"
       >
         <img alt="product_mascot" src={'/assets/images/product_mascot.webp'} />
       </motion.div>
-      <div className="flex h-full max-w-[910px] flex-col items-center gap-10 pr-0 text-medium md:items-end md:pr-[130px]">
-        <p className="mt-10 text-justify font-inter text-mobile leading-8 md:text-[25px]">
+      <div className="mx-10 flex h-full max-w-[910px] flex-col items-center gap-5 pr-0 text-medium md:items-end md:gap-10 md:pr-[130px]">
+        <p className="mt-20 text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Cô Sô - một thám tử thuộc tổ chức THIO`}
           <i>(Hiệp hội Điều tra Sức Khoẻ Xuyên thời gian)</i>
           {` đến từ tương lai để điều tra các nguyên do dẫn đến
             thực trạng nhiều người trẻ Việt Nam đang mắc các bệnh liên quan đến
           cột sống.`}
         </p>
-        <p className="text-justify font-inter text-mobile leading-8 md:text-[25px]">
+        <p className="text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Nghe phong thanh đồn đoán, “Cô Sô tới nơi - Hung thủ tới
           số". Liệu vị “trùm cuối" này sẽ đối phó với kẻ chủ mưu và giải cứu
           những nạn nhân mắc bệnh cột sống như thế nào? Mời mọi người cùng theo
           chân Cô Sô trong nhiệm vụ đầu tiên!`}
         </p>
         <motion.div
-          className="relative mt-8 h-full max-h-[180px] w-full max-w-[310px] md:max-h-[355px] md:max-w-[620px]"
+          className="relative mt-8 h-full max-h-[180px] w-full max-w-[312px] md:mt-8 md:max-h-[355px] md:max-w-[620px]"
           initial={{
             opacity: 0,
             scale: 0.5,
@@ -106,12 +106,12 @@ function Product2() {
           },
         }}
         viewport={{ once: true }}
-        className="absolute bottom-0 left-0 max-w-[668px]"
+        className="absolute -left-[12%] bottom-0 max-w-[250px] md:left-0 md:max-w-[668px]"
       >
         <img alt="choco_singer" src={'/assets/images/choco_singer.webp'} />
       </motion.div>
-      <div className="flex h-full max-w-[910px] flex-col items-end gap-10 pr-0 text-medium md:pr-[130px]">
-        <p className="mt-10 text-justify font-inter text-mobile leading-8 md:text-[25px]">
+      <div className="mx-10 flex h-full max-w-[910px] flex-col items-center gap-10 pr-0 text-medium md:items-end md:pr-[130px]">
+        <p className="mt-20 text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Đối mặt với tình trạng “cột sống bất ổn” đang tấn công, bộ đôi Cô Sô và THIO quyết định biến những “tiếng kêu cứu” của cột sống thành lời ca nhắn nhủ đậm chất GenZ. Với giai điệu hài hước của bài hát gốc “Chưa Có Wow,” Bài Ca Cột Sống được Ca sĩ Choco Trúc Phương góp giọng sẽ không chỉ mang đến cảm giác gần gũi qua giai điệu, mà còn chạm đến những insight cột sống ”éc ô éc” của người trẻ ngày nay!`}
         </p>
         <motion.div
@@ -160,11 +160,11 @@ function Product2() {
 
 function Product3() {
   return (
-    <div className="absolute bottom-0 left-1/2 flex -translate-x-1/2 flex-col items-center gap-10">
-      <p className="whitespace-nowrap text-justify font-orenji text-medium text-red-primary md:text-h1">
+    <div className="absolute bottom-0 left-1/2 flex w-full -translate-x-1/2 flex-col items-center gap-10">
+      <p className="mb-[100px] max-w-[318px] text-center font-orenji text-[45px] text-red-primary md:mb-0 md:max-w-full md:whitespace-nowrap md:text-justify md:text-h1">
         Bạn hãy quay lại sau nhé!
       </p>
-      <div className="relative max-w-[668px]">
+      <div className="relative max-w-[430px] md:max-w-[668px]">
         <img
           alt="confused_mascot"
           src={'/assets/images/confused_mascot.webp'}
@@ -213,25 +213,53 @@ function ProductSection() {
   };
 
   return (
-    <div className="mb-[400px]">
-      <div className="flex w-full flex-col items-center bg-red-primary md:flex-row">
+    <div className="mb-[200px] md:mb-[400px]">
+      <div className="flex w-full items-center bg-red-primary pb-2 pt-6 md:flex-row md:p-0">
         <motion.div
-          className="relative max-w-[235px]"
-          variants={isMobile ? {} : LEFT_ENTER}
-          initial="initial"
-          whileInView="animate"
+          className="absolute h-[110px] -translate-x-4 -translate-y-[20px] md:h-[220px] md:-translate-y-[30px]"
+          initial={{
+            left: '-50px',
+          }}
+          whileInView={{
+            left: 0,
+            transition: {
+              duration: 1,
+              ease: 'easeInOut',
+            },
+          }}
           viewport={{ once: true }}
         >
-          <img alt="mascot" src="/assets/images/side_mascot.webp" />
+          <img
+            alt="mascot"
+            src="/assets/images/side_mascot.webp"
+            className="h-full"
+          />
         </motion.div>
         <motion.div
-          variants={isMobile ? {} : LEFT_ENTER}
-          initial="initial"
-          whileInView="animate"
+          initial={{
+            left: 0,
+          }}
+          whileInView={
+            isMobile
+              ? {
+                  left: '90px',
+                  transition: {
+                    duration: 1,
+                    ease: 'easeInOut',
+                  },
+                }
+              : {
+                  left: '200px',
+                  transition: {
+                    duration: 1,
+                    ease: 'easeInOut',
+                  },
+                }
+          }
           viewport={{ once: true }}
-          className="relative text-white"
+          className="relative left-[90px] text-white md:left-[200px]"
         >
-          <p className="text-mobile md:text-title">
+          <p className="text-mobile font-bold leading-[17px] md:text-title">
             {PRODUCTS[currentProduct].label}
           </p>
           <h1 className="font-orenji text-medium md:text-h1">
@@ -239,12 +267,13 @@ function ProductSection() {
           </h1>
         </motion.div>
       </div>
-      <div className="relative flex h-[850px] justify-end bg-yellow-light">
-        <div className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-between px-4">
+
+      <div className="relative flex h-[770px] justify-end bg-yellow-light md:h-[850px]">
+        <div className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-between px-2 md:px-4">
           <button
             onClick={() => handleChangeProduct(-1)}
             className={cn(
-              'flex h-16 w-16 items-center justify-center rounded-full bg-red-primary',
+              'flex h-8 w-8 items-center justify-center rounded-full bg-red-primary md:h-16 md:w-16',
               currentProduct === 0 &&
                 'cursor-default bg-gray-500 hover:opacity-100',
             )}
@@ -254,7 +283,7 @@ function ProductSection() {
           <button
             onClick={() => handleChangeProduct(1)}
             className={cn(
-              'flex h-16 w-16 items-center justify-center rounded-full bg-red-primary',
+              'flex h-8 w-8 items-center justify-center rounded-full bg-red-primary md:h-16 md:w-16',
               currentProduct === PRODUCTS.length - 1 &&
                 'cursor-default bg-gray-500 hover:opacity-100',
             )}

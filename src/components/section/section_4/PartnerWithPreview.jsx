@@ -9,9 +9,9 @@ function PartnerWithPreview({ children }) {
       {children}
       <PrimaryButton
         className={
-          'flex w-fit min-w-0 max-w-[200px] justify-center whitespace-nowrap px-4 py-2'
+          'flex w-fit min-w-0 max-w-[200px] justify-center whitespace-nowrap px-3 py-1 md:min-w-0 md:px-4 md:py-2'
         }
-        textClassName={'!text-base w-min font-bold font-inter'}
+        textClassName={'text-[9px] md:!text-base w-min font-bold font-inter'}
         label={isMobile ? 'Giới thiệu' : 'Giới thiệu thương hiệu'}
       />
     </div>

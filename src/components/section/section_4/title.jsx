@@ -1,6 +1,8 @@
 function PartnerTitle({ label }) {
   return (
-    <p className="text-title font-bold uppercase text-red-primary">{label}</p>
+    <p className="text-mobile font-bold uppercase text-red-primary md:text-title">
+      {label}
+    </p>
   );
 }
 
