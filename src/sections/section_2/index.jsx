@@ -64,7 +64,7 @@ function SectionTwo() {
                 ease: 'easeInOut',
               },
             }}
-            // viewport={{ once: true }}
+            viewport={{ once: true }}
             className="font-orenji text-small leading-[25px] text-red-primary md:text-[50px] md:leading-[62px]"
           >
             Có thể là...
@@ -83,6 +83,7 @@ function SectionTwo() {
                 ease: 'easeInOut',
               },
             }}
+            viewport={{ once: true }}
             className="max-w-[160px] pt-4 text-justify text-extraSmall leading-[22px] md:max-w-full md:pt-0 md:text-4xl md:leading-[43px]"
           >
             Giới trẻ quan tâm nhiều hơn đến
@@ -104,6 +105,7 @@ function SectionTwo() {
               ease: 'easeInOut',
             },
           }}
+          viewport={{ once: true }}
           className="absolute -right-[8%] bottom-0 max-w-[238px] md:-right-[22%] md:max-w-[550px]"
         >
           <img
