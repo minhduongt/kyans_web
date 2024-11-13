@@ -177,7 +177,7 @@ function SectionOne() {
                 },
               }}
               viewport={{ once: true }}
-              className="absolute -left-[23%] max-w-[140px] -translate-x-[10%] md:-left-[10%] md:max-w-[248px]"
+              className="absolute -left-[26%] max-w-[140px] -translate-x-[10%] md:-left-[10%] md:max-w-[248px]"
             >
               <img
                 alt="confused_mascot"
