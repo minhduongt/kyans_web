@@ -17,7 +17,7 @@ function Contact() {
         </a>
         <a href="tel:0819541013">
           <p className="font-inter text-mobile text-white md:text-extraSmall">
-            Phone: 0819-541-013
+            Phone: 0819-541-014
           </p>
         </a>
         <a href="https://maps.app.goo.gl/3S14UB3hdy3UEzT79">

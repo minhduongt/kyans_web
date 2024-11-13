@@ -214,7 +214,7 @@ function ProductSection() {
 
   return (
     <div className="mb-[200px] md:mb-[400px]">
-      <div className="flex w-full items-center bg-red-primary pb-2 pt-6 md:flex-row md:p-0">
+      <div className="mb:pb-0 flex w-full items-center bg-red-primary pb-2 pt-6 md:flex-row">
         <motion.div
           className="absolute h-[110px] -translate-x-4 -translate-y-[20px] md:h-[220px] md:-translate-y-[30px]"
           initial={{
@@ -268,7 +268,7 @@ function ProductSection() {
         </motion.div>
       </div>
 
-      <div className="relative flex h-[770px] justify-end bg-yellow-light md:h-[850px]">
+      <div className="relative flex h-[770px] justify-end bg-yellow-light md:h-[880px]">
         <div className="absolute left-0 top-0 z-10 flex h-full w-full items-center justify-between px-2 md:px-4">
           <button
             onClick={() => handleChangeProduct(-1)}
@@ -278,7 +278,7 @@ function ProductSection() {
                 'cursor-default bg-gray-500 hover:opacity-100',
             )}
           >
-            <img className="h-6 w-6 rotate-180" src={ArrowIcon} />
+            <img className="h-4 w-4 rotate-180 md:h-6 md:w-6" src={ArrowIcon} />
           </button>
           <button
             onClick={() => handleChangeProduct(1)}
@@ -288,7 +288,7 @@ function ProductSection() {
                 'cursor-default bg-gray-500 hover:opacity-100',
             )}
           >
-            <img className="h-6 w-6" src={ArrowIcon} />
+            <img className="h-4 w-4 md:h-6 md:w-6" src={ArrowIcon} />
           </button>
         </div>
 

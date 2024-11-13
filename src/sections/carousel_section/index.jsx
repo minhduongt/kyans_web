@@ -11,8 +11,12 @@ function CarouselSection() {
 
   const swiperOptions = {
     loop: true,
-    autoplay: { delay: 0, disableOnInteraction: isMobile ? false : true },
-    noSwiping: isMobile ? true : false,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: isMobile ? false : true,
+    },
+    noSwiping: true,
+    preventClicks: true,
     freeMode: true,
     spaceBetween: 50,
     slidesPerView: 3,

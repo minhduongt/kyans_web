@@ -112,7 +112,7 @@ function Header() {
       <motion.div
         initial={
           isMobile
-            ? {}
+            ? { left: '-20%', top: '55%' }
             : {
                 left: '-25%',
                 top: '60%',
@@ -121,6 +121,8 @@ function Header() {
         animate={
           isMobile
             ? {
+                left: '-5%',
+                top: '48%',
                 transition: {
                   duration: 1,
                   delay: 0.3,

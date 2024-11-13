@@ -1,10 +1,25 @@
 import { cn } from '@/utils';
 import { useMediaQuery } from '@uidotdev/usehooks';
+import { motion } from 'framer-motion';
 
-function CardWithPin({ children, className, isFull = false }) {
+function CardWithPin({ children, className, isFull = false, no = 0 }) {
   const isMobile = useMediaQuery('only screen and (max-width : 768px)');
   return (
-    <div
+    <motion.div
+      initial={{
+        opacity: 0,
+        transform: 'scale(2)',
+      }}
+      whileInView={{
+        opacity: 1,
+        transform: 'scale(1)',
+        transition: {
+          duration: 1,
+          delay: no * 0.5,
+          ease: 'easeInOut',
+        },
+      }}
+      viewport={{ once: true }}
       className={cn(
         'relative flex h-full min-h-[228px] w-full max-w-[250px] items-center justify-center md:max-h-[540px] md:min-h-0 md:max-w-[430px]',
         className,
@@ -18,7 +33,7 @@ function CardWithPin({ children, className, isFull = false }) {
         )}
       </div>
       {children}
-    </div>
+    </motion.div>
   );
 }
 

@@ -11,17 +11,17 @@ function SectionThree() {
       {isMobile ? (
         <div className="absolute w-full">
           <motion.div
-            // initial={{
-            //   transform: 'rotateY(90deg)',
-            // }}
-            // whileInView={{
-            //   transform: 'none',
-            //   transition: {
-            //     duration: 1,
-            //     ease: 'easeInOut',
-            //   },
-            // }}
-            // viewport={{ once: true }}
+            initial={{
+              transform: 'translateX(-50%)',
+            }}
+            whileInView={{
+              transform: 'translateX(0)',
+              transition: {
+                duration: 1,
+                ease: 'easeInOut',
+              },
+            }}
+            viewport={{ once: true }}
             className="w-full"
           >
             <img
@@ -31,17 +31,17 @@ function SectionThree() {
             />
           </motion.div>
           <motion.div
-            // initial={{
-            //   transform: 'rotateY(90deg)',
-            // }}
-            // whileInView={{
-            //   transform: 'none',
-            //   transition: {
-            //     duration: 1,
-            //     ease: 'easeInOut',
-            //   },
-            // }}
-            // viewport={{ once: true }}
+            initial={{
+              transform: 'translateX(50%)',
+            }}
+            whileInView={{
+              transform: 'translateX(0)',
+              transition: {
+                duration: 1,
+                ease: 'easeInOut',
+              },
+            }}
+            viewport={{ once: true }}
             className="relative -top-[120px] w-full"
           >
             <img
@@ -73,38 +73,44 @@ function SectionThree() {
           />
         </motion.div>
       )}
-      <motion.div
-        initial={
-          isMobile
-            ? {}
-            : {
-                opacity: 0,
-              }
-        }
-        whileInView={
-          isMobile
-            ? {}
-            : {
-                opacity: 1,
-                transition: {
-                  duration: 1,
-                  delay: 1,
-                  ease: 'easeInOut',
-                },
-              }
-        }
-        viewport={{ once: true }}
-        className="mt-10 flex flex-col pt-[4%] md:m-4 md:flex-row"
-      >
-        <div className="relative z-10 mt-10 flex w-full flex-col items-center md:mt-0 md:w-[52%]">
+      <div className="mt-10 flex flex-col pt-[4%] md:m-4 md:flex-row">
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 1,
+              delay: 1,
+              ease: 'easeInOut',
+            },
+          }}
+          viewport={{ once: true }}
+          className="relative z-10 mt-10 flex w-full flex-col items-center md:mt-0 md:w-[52%]"
+        >
           <div className="max-w-[360px] md:max-w-[650px]">
             <img alt="section3 logo" src="/assets/images/section3_logo.webp" />
           </div>
           <div className="relative bottom-8 left-[5%] max-h-[375px] w-full max-w-[850px] scale-[1.1]">
             <img alt="steps" src="/assets/images/section3_steps.png" />
           </div>
-        </div>
-        <div className="relative z-10 mt-[30px] w-full px-5 md:mt-0 md:w-[48%] md:px-0">
+        </motion.div>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 1,
+              delay: 1,
+              ease: 'easeInOut',
+            },
+          }}
+          viewport={{ once: true }}
+          className="relative z-10 mt-[30px] w-full px-5 md:mt-0 md:w-[48%] md:px-0"
+        >
           <div className="relative mt-[10%] rounded-bl-[30px] rounded-tr-[30px] border-[3px] border-solid border-[#AD1C1C5E] bg-[#FFFFFF5C] p-6 md:rounded-bl-[85px] md:rounded-tr-[85px] md:p-10">
             <Section3Title
               label={'Sứ mệnh'}
@@ -154,8 +160,8 @@ function SectionThree() {
               </div>
             </div>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
       <motion.div
         initial={
           isMobile
@@ -187,7 +193,7 @@ function SectionThree() {
               }
         }
         viewport={{ once: true }}
-        className="absolute -left-[30%] bottom-[130px] max-w-[300px] md:-left-[18%] md:bottom-0 md:max-w-[861px]"
+        className="absolute -left-[30%] bottom-[8%] max-w-[300px] md:-left-[18%] md:bottom-0 md:max-w-[861px]"
       >
         <img alt="section3 logo" src="/assets/images/section3_doc.webp" />
       </motion.div>

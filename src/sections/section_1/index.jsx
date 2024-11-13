@@ -1,12 +1,30 @@
 import PrimaryButton from '@/components/element/PrimaryButton';
 import '@/styles/sections/Section1.scss';
+import { motion } from 'framer-motion';
 
 function SectionOne() {
   return (
     <div className="relative h-[1500px] pb-[200px]">
-      <div className="absolute -top-[1%] left-0 z-[2] hidden max-w-[622px] md:block">
-        <img alt="confused_mascot" src={'/assets/images/section1_glass.webp'} />
-      </div>
+      <motion.div
+        initial={{
+          opacity: 0,
+          left: '-10%',
+          transform: 'scale(2)',
+        }}
+        whileInView={{
+          opacity: 1,
+          left: 0,
+          transform: 'scale(1)',
+          transition: {
+            duration: 1,
+            ease: 'easeInOut',
+          },
+        }}
+        viewport={{ once: true }}
+        className="absolute -top-[1%] left-0 z-[2] hidden max-w-[622px] md:block"
+      >
+        <img alt="section1_glass" src={'/assets/images/section1_glass.webp'} />
+      </motion.div>
       <div className="mt-6 flex justify-center">
         <PrimaryButton
           className={'max-w-fit whitespace-nowrap px-[8%] py-[2%]'}
@@ -27,7 +45,23 @@ function SectionOne() {
               </h1>
             </div>
             <div className="flex h-[750px] flex-col gap-14 rounded-b-[45px] rounded-tr-[45px] bg-yellow-light pt-10 md:h-[600px] md:justify-center md:gap-[15%] md:pt-0">
-              <div className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0">
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  transform: 'scale(1.2) rotate(15deg)',
+                }}
+                whileInView={{
+                  opacity: 1,
+
+                  transform: 'scale(1)',
+                  transition: {
+                    duration: 1,
+                    ease: 'easeInOut',
+                  },
+                }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0"
+              >
                 <div className="statistic_paragraph">
                   <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
                     Mỗi năm, Việt Nam có khoảng
@@ -58,8 +92,25 @@ function SectionOne() {
                     </span>
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0">
+              </motion.div>
+              <motion.div
+                initial={{
+                  opacity: 0,
+                  transform: 'scale(1.2) rotate(-15deg)',
+                }}
+                whileInView={{
+                  opacity: 1,
+
+                  transform: 'scale(1)',
+                  transition: {
+                    duration: 1,
+                    delay: 0.5,
+                    ease: 'easeInOut',
+                  },
+                }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center justify-center gap-14 md:mx-10 md:flex-row md:gap-0"
+              >
                 <div className="statistic_paragraph">
                   <p className="h-fit w-fit max-w-[310px] text-justify font-inter text-mobile leading-[17px] md:max-w-[320px] md:text-medium md:leading-[29px]">
                     Theo Cục Y tế Dự phòng từ Bộ Y tế, ít nhất
@@ -88,27 +139,89 @@ function SectionOne() {
                     đến khả năng vận động.
                   </p>
                 </div>
-              </div>
-              <div className="absolute -bottom-[20%] -right-[9%] max-w-[365px] -translate-x-[7%] md:-bottom-[7%] md:-right-[8%]">
+              </motion.div>
+              <motion.div
+                initial={{
+                  opacity: 0.1,
+                  right: '-15%',
+                }}
+                whileInView={{
+                  opacity: 1,
+                  right: '-8%',
+                  transition: {
+                    duration: 1,
+                    delay: 0.8,
+                    ease: 'easeInOut',
+                  },
+                }}
+                viewport={{ once: true }}
+                className="absolute -bottom-[20%] -right-[9%] max-w-[365px] -translate-x-[7%] md:-bottom-[7%] md:-right-[8%]"
+              >
                 <img
                   alt="section1_mascot"
                   src={'/assets/images/section1_mascot.webp'}
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="relative flex h-[120px] w-[85%] flex-col items-center justify-center rounded-r-[45px] bg-yellow-light md:h-[240px] md:w-[95%]">
-            <div className="absolute -left-[23%] max-w-[140px] -translate-x-[10%] md:-left-[10%] md:max-w-[248px]">
+            <motion.div
+              initial={{
+                transform: 'scale(0.3) ',
+              }}
+              whileInView={{
+                transform: 'scale(1)',
+                transition: {
+                  duration: 1,
+                  ease: 'easeInOut',
+                },
+              }}
+              viewport={{ once: true }}
+              className="absolute -left-[23%] max-w-[140px] -translate-x-[10%] md:-left-[10%] md:max-w-[248px]"
+            >
               <img
                 alt="confused_mascot"
                 src={'/assets/images/section1_shockMascot.webp'}
               />
-            </div>
+            </motion.div>
             <div className="pl-[10%]">
-              <h1 className="relative font-orenji text-[18px] text-red-primary md:right-[110px] md:text-[50px]">
+              <motion.h1
+                initial={{
+                  opacity: 0,
+                  transform: 'scale(3) ',
+                }}
+                whileInView={{
+                  opacity: 1,
+
+                  transform: 'scale(1)',
+                  transition: {
+                    duration: 1,
+                    delay: 0.5,
+                    ease: 'easeInOut',
+                  },
+                }}
+                viewport={{ once: true }}
+                className="relative font-orenji text-[18px] text-red-primary md:right-[110px] md:text-[50px]"
+              >
                 Đặc biệt hơn...
-              </h1>
-              <p className="max-w-[240px] text-justify text-mobile leading-[17px] md:max-w-[750px] md:text-[32px] md:leading-[38px]">
+              </motion.h1>
+              <motion.p
+                initial={{
+                  opacity: 0,
+                  transform: 'scale(2) ',
+                }}
+                whileInView={{
+                  opacity: 1,
+                  transform: 'scale(1)',
+                  transition: {
+                    duration: 1,
+                    delay: 1,
+                    ease: 'easeInOut',
+                  },
+                }}
+                viewport={{ once: true }}
+                className="max-w-[240px] text-justify text-mobile leading-[17px] md:max-w-[750px] md:text-[32px] md:leading-[38px]"
+              >
                 Nhiều người từ chối phẫu thuật chủ yếu vì
                 <span className="font-bold text-red-primary">
                   {' lo ngại biến chứng '}
@@ -118,7 +231,7 @@ function SectionOne() {
                   {' yếu cơ, tê liệt'}
                 </span>
                 .
-              </p>
+              </motion.p>
             </div>
           </div>
         </div>
