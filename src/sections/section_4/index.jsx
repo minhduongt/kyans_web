@@ -103,6 +103,14 @@ function SectionFour() {
                 />
               </div>
             </PartnerWithPreview>
+            <PartnerWithPreview>
+              <div className="max-h-[112px] max-w-[207px]">
+                <img
+                  alt="partner_huynhhoav"
+                  src="/assets/images/partner_huynhhoa.webp"
+                />
+              </div>
+            </PartnerWithPreview>
           </div>
         </div>
         <div id="partner_group_7" className="flex flex-col items-center gap-9">
@@ -119,6 +127,15 @@ function SectionFour() {
                 alt="partner_elisa"
                 src="/assets/images/partner_elisa.webp"
               />
+            </div>
+            <div className="max-h-[130px] max-w-[150px]">
+              <img
+                alt="partner_longthanh"
+                src="/assets/images/partner_longthanh.webp"
+              />
+            </div>
+            <div className="max-h-[130px] max-w-[150px]">
+              <img alt="partner_wil" src="/assets/images/partner_wil.webp" />
             </div>
           </div>
         </div>

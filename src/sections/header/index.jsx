@@ -61,7 +61,7 @@ function Header() {
               }
             : {
                 left: 0,
-                top: 'initial',
+                top: '15%',
                 transition: {
                   duration: 1,
                   delay: 0.3,
@@ -69,7 +69,7 @@ function Header() {
                 },
               }
         }
-        className="md:left:0 absolute -left-[25%] top-[5%] z-[2] max-w-[150px] md:top-[12%] md:max-w-[300px]"
+        className="md:left:0 absolute -left-[25%] top-[5%] z-[2] max-w-[150px] md:top-[15%] md:max-w-[300px]"
       >
         <img alt="pencil" src="/assets/images/header_pen.webp" />
       </motion.div>
