@@ -30,14 +30,14 @@ function Product1() {
         <img alt="product_mascot" src={'/assets/images/product_mascot.webp'} />
       </motion.div>
       <div className="mx-10 flex h-full max-w-[910px] flex-col items-center gap-5 pr-0 text-medium md:items-end md:gap-10 md:pr-[130px]">
-        <p className="font-inter text-mobile mt-20 text-justify leading-[17px] md:text-[25px] md:leading-8">
+        <p className="mt-20 text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Cô Sô - một thám tử thuộc tổ chức THIO`}
           <i>(Hiệp hội Điều tra Sức Khoẻ Xuyên thời gian)</i>
           {` đến từ tương lai để điều tra các nguyên do dẫn đến
             thực trạng nhiều người trẻ Việt Nam đang mắc các bệnh liên quan đến
           cột sống.`}
         </p>
-        <p className="font-inter text-mobile text-justify leading-[17px] md:text-[25px] md:leading-8">
+        <p className="text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Nghe phong thanh đồn đoán, “Cô Sô tới nơi - Hung thủ tới
           số". Liệu vị “trùm cuối" này sẽ đối phó với kẻ chủ mưu và giải cứu
           những nạn nhân mắc bệnh cột sống như thế nào? Mời mọi người cùng theo
@@ -78,7 +78,7 @@ function Product1() {
               <Loading />
             </div>
           )}
-          <h1 className="font-inter text-mobile pt-[3%] text-center font-bold md:text-medium">
+          <h1 className="pt-[3%] text-center font-inter text-mobile font-bold md:text-medium">
             {'Official Animated Short Film'}
           </h1>
         </motion.div>
@@ -111,7 +111,7 @@ function Product2() {
         <img alt="choco_singer" src={'/assets/images/choco_singer.webp'} />
       </motion.div>
       <div className="mx-10 flex h-full max-w-[910px] flex-col items-center gap-10 pr-0 text-medium md:items-end md:pr-[130px]">
-        <p className="font-inter text-mobile mt-20 text-justify leading-[17px] md:text-[25px] md:leading-8">
+        <p className="mt-20 text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
           {`Đối mặt với tình trạng “cột sống bất ổn” đang tấn công, bộ đôi Cô Sô và THIO quyết định biến những “tiếng kêu cứu” của cột sống thành lời ca nhắn nhủ đậm chất GenZ. Với giai điệu hài hước của bài hát gốc “Chưa Có Wow,” Bài Ca Cột Sống được Ca sĩ Choco Trúc Phương góp giọng sẽ không chỉ mang đến cảm giác gần gũi qua giai điệu, mà còn chạm đến những insight cột sống ”éc ô éc” của người trẻ ngày nay!`}
         </p>
         <motion.div
@@ -149,7 +149,7 @@ function Product2() {
               <Loading />
             </div>
           )}
-          <h1 className="font-inter text-mobile pt-[3%] text-center font-bold md:text-medium">
+          <h1 className="pt-[3%] text-center font-inter text-mobile font-bold md:text-medium">
             {'Official Motion Music Video'}
           </h1>
         </motion.div>
