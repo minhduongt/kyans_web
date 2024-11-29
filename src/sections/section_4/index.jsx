@@ -1,3 +1,4 @@
+import DermaAngelContent from '@/components/section/section_4/dermaAngelContent';
 import PartnerWithPreview from '@/components/section/section_4/PartnerWithPreview';
 import PartnerTitle from '@/components/section/section_4/title';
 
@@ -85,7 +86,7 @@ function SectionFour() {
         >
           <PartnerTitle label={'NHÀ TÀI TRỢ KIM CƯƠNG'} />
           <div className="flex w-full items-center justify-center gap-5 md:gap-10">
-            <PartnerWithPreview>
+            <PartnerWithPreview previewContent={<DermaAngelContent />}>
               <div className="max-w-[162px] md:max-w-[360px]">
                 <img
                   alt="partner_dermaAngel"

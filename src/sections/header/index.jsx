@@ -1,8 +1,8 @@
+import '@/styles/sections/Header.scss';
+import { useMediaQuery } from '@uidotdev/usehooks';
 import { motion } from 'framer-motion';
 import HeaderContent from './HeaderContent';
 import NavigationBar from './NavigationBar';
-import '@/styles/sections/Header.scss';
-import { useMediaQuery } from '@uidotdev/usehooks';
 
 function Header() {
   const isMobile = useMediaQuery('only screen and (max-width : 768px)');
