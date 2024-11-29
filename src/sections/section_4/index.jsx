@@ -1,4 +1,4 @@
-import DermaAngelContent from '@/components/section/section_4/dermaAngelContent';
+import DermaAngelContent from '@/components/section/section_4/DermaAngelContent';
 import PartnerWithPreview from '@/components/section/section_4/PartnerWithPreview';
 import PartnerTitle from '@/components/section/section_4/title';
 
