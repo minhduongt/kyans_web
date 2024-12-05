@@ -1,6 +1,9 @@
 import DermaAngelContent from '@/components/section/section_4/DermaAngelContent';
+import HuynhHoaContent from '@/components/section/section_4/HuynhHoaContent';
 import PartnerWithPreview from '@/components/section/section_4/PartnerWithPreview';
+import SnowContent from '@/components/section/section_4/SnowContent';
 import PartnerTitle from '@/components/section/section_4/title';
+import ZingContent from '@/components/section/section_4/ZingContent';
 
 function SectionFour() {
   return (
@@ -118,7 +121,7 @@ function SectionFour() {
                 />
               </div>
             </PartnerWithPreview>
-            <PartnerWithPreview>
+            <PartnerWithPreview previewContent={<ZingContent />}>
               <div className="max-w-[66px] md:max-w-[130px]">
                 <img
                   alt="partner_zing"
@@ -126,7 +129,7 @@ function SectionFour() {
                 />
               </div>
             </PartnerWithPreview>
-            <PartnerWithPreview>
+            <PartnerWithPreview previewContent={<SnowContent />}>
               <div className="max-w-[64px] md:max-w-[130px]">
                 <img
                   alt="partner_snow"
@@ -134,7 +137,7 @@ function SectionFour() {
                 />
               </div>
             </PartnerWithPreview>
-            <PartnerWithPreview>
+            <PartnerWithPreview previewContent={<HuynhHoaContent />}>
               <div className="max-w-[77px] md:max-w-[207px]">
                 <img
                   alt="partner_huynhhoav"

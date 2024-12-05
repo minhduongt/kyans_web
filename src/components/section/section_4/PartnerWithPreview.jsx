@@ -39,9 +39,9 @@ function PartnerWithPreview({ previewContent, children }) {
           leave: 'fade-out',
         }}
         classNames={{
-          wrapper: 'overflow-hidden',
+          wrapper: '',
           content:
-            'max-h-[calc(100vh-50px)] rounded-[70px] border-[10px] border-red-primary border-solid',
+            'rounded-[24px] lg:rounded-[70px] border-[10px] border-red-primary border-solid',
         }}
       >
         {previewContent ?? <p>Chưa có giới thiệu về nhà tài trợ này</p>}
