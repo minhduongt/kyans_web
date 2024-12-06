@@ -29,10 +29,10 @@ function SnowContent() {
               với <b>Thương hiệu Snow Việt Nam</b>. <b>SNOW Việt Nam</b>, với
               các ứng dụng nổi bật như <b>SNOW, B612, Soda, Foodie,</b>... đã
               trở thành công cụ không thể thiếu cho giới trẻ GenZ. Kể từ khi ra
-              mắt vào năm 2015, <b>SNOW</b>
+              mắt vào năm 2015, <b>{'SNOW '}</b>
               đã thu hút hơn 100 triệu người dùng nhờ vào sự sáng tạo và các
               tính năng độc đáo. Với hàng ngàn hiệu ứng và bộ lọc đa dạng,{' '}
-              <b>SNOW</b>
+              <b>{'SNOW '}</b>
               mang đến cho bạn khả năng chỉnh sửa ảnh/video một cách dễ dàng và
               thú vị, giúp mọi khoảnh khắc trở nên đặc biệt.
             </span>
@@ -42,7 +42,7 @@ function SnowContent() {
               chia sẻ. Thế hệ GenZ có thể giao tiếp và chia sẻ những khoảnh khắc
               vui vẻ, độc đáo và ý nghĩa, đồng thời nhắc nhở nhau về tầm quan
               trọng của sức khỏe cột sống. Hãy theo dõi và sử dụng các sản phẩm
-              của <b>SNOW</b>
+              của <b>{'SNOW '}</b>
               để tận hưởng những trải nghiệm sáng tạo, thể hiện cá tính và cùng
               nhau xây dựng một tương lai cột sống khỏe mạnh.
             </span>
