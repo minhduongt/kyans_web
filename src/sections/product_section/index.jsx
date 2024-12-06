@@ -31,7 +31,7 @@ function Product1() {
       </motion.div>
       <div className="mx-10 flex h-full max-w-[910px] flex-col items-center gap-5 pr-0 text-medium md:items-end md:gap-10 md:pr-[130px]">
         <p className="mt-20 text-justify font-inter text-mobile leading-[17px] md:text-[25px] md:leading-8">
-          {`Cô Sô - một thám tử thuộc tổ chức THIO`}
+          {`Cô Sô - một thám tử thuộc tổ chức THIO `}
           <i>(Hiệp hội Điều tra Sức Khoẻ Xuyên thời gian)</i>
           {` đến từ tương lai để điều tra các nguyên do dẫn đến
             thực trạng nhiều người trẻ Việt Nam đang mắc các bệnh liên quan đến
