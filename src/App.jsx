@@ -10,8 +10,10 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 import '@/styles/App.scss';
 import '@/styles/fonts.scss';
 import { useEffect } from 'react';
+import useAnalytics from './hook/useAnalytics';
 
 function App() {
+  useAnalytics();
   const hash = window.location.hash;
   useEffect(() => {
     if (hash) {
